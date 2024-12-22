@@ -1,37 +1,37 @@
-import React, { useState } from "react";
-import ButtonItem from "../button/Button";
-import Logo from "@/assets/logo.png";
-import { Link, Outlet } from "react-router-dom";
-import { Menu } from "lucide-react";
-import clsx from "clsx";
-import { AnimatePresence, motion } from "framer-motion";
-import { MdClose } from "react-icons/md";
+import React, { useState } from 'react';
+import ButtonItem from '../button/Button';
+import Logo from '@/assets/logo.webp';
+import { Link, Outlet } from 'react-router-dom';
+import { Menu } from 'lucide-react';
+import clsx from 'clsx';
+import { AnimatePresence, motion } from 'framer-motion';
+import { MdClose } from 'react-icons/md';
 const Navbar: React.FC = () => {
   const navItem = [
     {
       id: 1,
-      name: "Home",
-      path: "/",
+      name: 'Home',
+      path: '/',
     },
     {
       id: 2,
-      name: "About",
-      path: "/about",
+      name: 'About',
+      path: '/about',
     },
     {
       id: 3,
-      name: "Community",
-      path: "/community",
+      name: 'Community',
+      path: '/community',
     },
     {
       id: 4,
-      name: "Contact",
-      path: "/contact",
+      name: 'Contact',
+      path: '/contact',
     },
     {
       id: 5,
-      name: "Blog",
-      path: "/blog",
+      name: 'Blog',
+      path: '/blog',
     },
   ];
 
@@ -47,10 +47,7 @@ const Navbar: React.FC = () => {
             </div>
             <ul className="flex items-center justify-between gap-[30px] font-rozanovaBold max-[900px]:hidden">
               {navItem.map((item) => (
-                <li
-                  className="relative cursor-pointer group inline-block"
-                  key={item.id}
-                >
+                <li className="relative cursor-pointer group inline-block" key={item.id}>
                   <Link to={item?.path}>{item?.name}</Link>
                   <span className="absolute bottom-[-1px] left-0 w-full h-[2px] bg-orangish scale-x-0 origin-bottom-right group-hover:scale-x-100 group-hover:origin-bottom-left transition-transform duration-500 ease-out"></span>
                 </li>
@@ -82,17 +79,17 @@ const Navbar: React.FC = () => {
             {isOpened && (
               <motion.div
                 className={clsx(
-                  "bg-white py-4",
-                  isOpened && "fixed right-0 top-[90px] w-full",
-                  !isOpened && "fixed right-[-100vw] top-[90px]"
+                  'bg-white py-4',
+                  isOpened && 'fixed right-0 top-[90px] w-full',
+                  !isOpened && 'fixed right-[-100vw] top-[90px]'
                 )}
                 initial={{
                   opacity: 0,
-                  width: "0",
+                  width: '0',
                 }}
                 animate={{
                   opacity: 1,
-                  width: "100%",
+                  width: '100%',
                 }}
                 exit={{
                   width: 0,

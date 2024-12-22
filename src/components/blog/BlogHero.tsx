@@ -1,5 +1,5 @@
-import PagesHero from "../PagesHero";
-import dune from "@/assets/dune.png";
+import PagesHero from '../PagesHero';
+import dune from '@/assets/dune.webp';
 
 const BlogHero = () => {
   return (

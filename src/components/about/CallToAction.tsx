@@ -1,8 +1,8 @@
-import React from "react";
-import dune from "@/assets/dune.png";
-import Texts from "@/components/Texts";
-import actionImg from "@/assets/actionImg.png";
-import ButtonItem from "@/components/button/Button";
+import React from 'react';
+import dune from '@/assets/dune.webp';
+import Texts from '@/components/Texts';
+import actionImg from '@/assets/actionImg.webp';
+import ButtonItem from '@/components/button/Button';
 
 const CallToAction: React.FC = () => {
   return (

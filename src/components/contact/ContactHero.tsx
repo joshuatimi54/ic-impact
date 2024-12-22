@@ -1,6 +1,6 @@
-import React from "react";
-import PagesHero from "../PagesHero";
-import earth from "@/assets/earthMap.png";
+import React from 'react';
+import PagesHero from '../PagesHero';
+import earth from '@/assets/earthMap.webp';
 
 const ContactHero: React.FC = () => {
   return (

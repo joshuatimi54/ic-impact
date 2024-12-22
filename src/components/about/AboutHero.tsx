@@ -1,6 +1,6 @@
-import React from "react";
-import dune from "@/assets/dune.png";
-import PagesHero from "../PagesHero";
+import React from 'react';
+import dune from '@/assets/dune.webp';
+import PagesHero from '../PagesHero';
 
 const AboutHero: React.FC = () => {
   return (

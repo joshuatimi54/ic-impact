@@ -1,8 +1,8 @@
-import grouphug from "@/assets/group-hug.png";
-import Texts from "../Texts";
-import ButtonItem from "../button/Button";
-import BlurText from "../animation/BlurText";
-import { useInView } from "react-intersection-observer";
+import grouphug from '@/assets/group-hug.webp';
+import Texts from '../Texts';
+import ButtonItem from '../button/Button';
+import BlurText from '../animation/BlurText';
+import { useInView } from 'react-intersection-observer';
 
 const Discover = () => {
   const [refOne, inViewOne] = useInView({
@@ -23,29 +23,27 @@ const Discover = () => {
         >
           <div className="">
             <span className="bg-cyanish text-[12px] text-white px-3 py-1 rounded-[10px] font-rozanovaThin ">
-              ABOUT US{" "}
+              ABOUT US{' '}
             </span>
             <h2 className="scroll-m-20 text-[40px] max-[600px]:text-[30px] leading-9 font-semibold tracking-tight mt-3 mb-4">
               <BlurText inview={inViewOne}>Discover Our Mission</BlurText>
             </h2>
           </div>
           <Texts>
-            At IC-IMPACT Community, we are a spirit-led network dedicated to
-            bringing God-inspired ideas to life. Our mission is to empower
-            individuals, ministries, and organizations to fulfill their divine
-            purpose through strategic guidance, creative solutions, and
-            impactful outreach.
+            At IC-IMPACT Community, we are a spirit-led network dedicated to bringing
+            God-inspired ideas to life. Our mission is to empower individuals, ministries,
+            and organizations to fulfill their divine purpose through strategic guidance,
+            creative solutions, and impactful outreach.
           </Texts>
           <Texts className="mt-3">
-            With a foundation rooted in faith and a collaborative approach, we
-            transform vision into reality. From prayerful brainstorming to
-            Spirit-led execution, every step is crafted with care and
-            excellence. Together, we can bring your God-given ideas to fruition
-            and glorify His name through purposeful action.{" "}
+            With a foundation rooted in faith and a collaborative approach, we transform
+            vision into reality. From prayerful brainstorming to Spirit-led execution,
+            every step is crafted with care and excellence. Together, we can bring your
+            God-given ideas to fruition and glorify His name through purposeful action.{' '}
           </Texts>
           <ButtonItem className="bg-greenish mt-2 w-fit px-6 py-2">
-            {" "}
-            Get The Full Story{" "}
+            {' '}
+            Get The Full Story{' '}
           </ButtonItem>
         </div>
       </div>

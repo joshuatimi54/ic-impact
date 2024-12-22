@@ -1,8 +1,8 @@
-import { useInView } from "react-intersection-observer";
-import Texts from "../Texts";
-import FadeIn from "../animation/FadeIn";
-import ButtonItem from "../button/Button";
-import Pyramidic from "@/assets/pyramidic.png";
+import { useInView } from 'react-intersection-observer';
+import Texts from '../Texts';
+import FadeIn from '../animation/FadeIn';
+import ButtonItem from '../button/Button';
+import Pyramidic from '@/assets/pyramidic.webp';
 
 const FirstStep = () => {
   const [refOne, inView] = useInView({
@@ -20,19 +20,17 @@ const FirstStep = () => {
           <FadeIn up={false} inView={inView}>
             <div className="flex flex-col gap-4 items-start max-w-[500px]">
               <Texts>
-                IC-IMPACT addresses some of the most critical challenges facing
-                youth today, especially in Nigeria. Issues like unemployment,
-                lack of direction, and the temptation of illegal pursuits often
-                derail young people from realizing their true potential. This
-                community offers a transformative solution, equipping you with
-                spiritual resilience, practical skills, and financial knowledge
-                to thrive and lead.{" "}
+                IC-IMPACT addresses some of the most critical challenges facing youth
+                today, especially in Nigeria. Issues like unemployment, lack of direction,
+                and the temptation of illegal pursuits often derail young people from
+                realizing their true potential. This community offers a transformative
+                solution, equipping you with spiritual resilience, practical skills, and
+                financial knowledge to thrive and lead.{' '}
               </Texts>
               <Texts>
-                By joining IC-IMPACT, you become part of a movement committed to
-                raising a generation of leaders who are spiritually grounded,
-                purpose-driven, and financially empowered to create positive
-                change in their communities.
+                By joining IC-IMPACT, you become part of a movement committed to raising a
+                generation of leaders who are spiritually grounded, purpose-driven, and
+                financially empowered to create positive change in their communities.
               </Texts>
             </div>
           </FadeIn>

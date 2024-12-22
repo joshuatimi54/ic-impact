@@ -1,10 +1,10 @@
-import TeamMember from "./TeamMember";
-import Josh from "@/assets/Joshua.png";
-import Goodness from "@/assets/Goodness.png";
-import Chidi from "@/assets/Chidi.png";
-import Joy from "@/assets/Joy.png";
-import FadeIn from "@/components/animation/FadeIn";
-import { useInView } from "react-intersection-observer";
+import TeamMember from './TeamMember';
+import Josh from '@/assets/Joshua.webp';
+import Goodness from '@/assets/Goodness.webp';
+import Chidi from '@/assets/Chidi.webp';
+import Joy from '@/assets/Joy.webp';
+import FadeIn from '@/components/animation/FadeIn';
+import { useInView } from 'react-intersection-observer';
 
 const Team = () => {
   const [refOne, inView] = useInView({

@@ -1,10 +1,10 @@
 import React from 'react';
-import fdnImg from '@/assets/foundation.png';
-import clans from '@/assets/clan.png';
+import fdnImg from '@/assets/foundation.webp';
+import clans from '@/assets/clan.webp';
 import Texts from '../Texts';
 import BlurText from '../animation/BlurText';
 import { useInView } from 'react-intersection-observer';
-import Star from '@/assets/Star.png';
+import Star from '@/assets/Star.webp';
 
 const OurFoundation: React.FC = () => {
   const [refOne, inViewOne] = useInView({

@@ -1,8 +1,8 @@
-import Texts from "@/components/Texts";
-import React from "react";
-import running from "@/assets/peopleRunning.png";
-import { useInView } from "react-intersection-observer";
-import FadeIn from "../animation/FadeIn";
+import Texts from '@/components/Texts';
+import React from 'react';
+import running from '@/assets/peopleRunning.webp';
+import { useInView } from 'react-intersection-observer';
+import FadeIn from '../animation/FadeIn';
 
 const AboutIc: React.FC = () => {
   const [refOne, inView] = useInView({
@@ -24,20 +24,20 @@ const AboutIc: React.FC = () => {
             <Texts>
               <strong>The InnerCircle of Impact Community (IC-IMPACT)</strong>
               <span className="ml-1">
-                was born out of a profound vision to transform lives, raise
-                purpose, and promote healing of the mind.
+                was born out of a profound vision to transform lives, raise purpose, and
+                promote healing of the mind.
               </span>
             </Texts>
             <Texts className="!text-[14px]">
-              In today’s world, where young individuals often face obstacles
-              that lead them down destructive paths such as illegal enterprises
-              and uncertain futures, we felt an undeniable divine calling to
-              stand as a signal of hope and empowerment
+              In today’s world, where young individuals often face obstacles that lead
+              them down destructive paths such as illegal enterprises and uncertain
+              futures, we felt an undeniable divine calling to stand as a signal of hope
+              and empowerment
             </Texts>
             <Texts className="!text-[14px]">
-              The seed of this transformative community was laid during a
-              life-changing spiritual retreat on October 2, 2024, where the word
-              IMPACT was divinely revealed as our core mission{" "}
+              The seed of this transformative community was laid during a life-changing
+              spiritual retreat on October 2, 2024, where the word IMPACT was divinely
+              revealed as our core mission{' '}
             </Texts>
           </div>
         </FadeIn>

@@ -1,8 +1,8 @@
 import React from 'react';
 import ButtonItem from '@/components/button/Button';
 import Texts from '@/components/Texts';
-import heroImg from '@/assets/heroImg.png';
-import map from '@/assets/map.png';
+import heroImg from '@/assets/heroImg.webp';
+import map from '@/assets/map.webp';
 
 const Hero: React.FC = () => {
   return (
