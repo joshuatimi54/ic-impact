@@ -34,7 +34,7 @@ const FirstStep = () => {
               </Texts>
             </div>
           </FadeIn>
-          <ButtonItem className="mt-[30px]">Take the First Step</ButtonItem>
+          <ButtonItem className="mx-auto mt-[30px]">Take the First Step</ButtonItem>
         </div>
         <div className="max-w-[500px]">
           <img src={Pyramidic} alt="img" />
