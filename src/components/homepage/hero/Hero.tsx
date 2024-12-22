@@ -1,10 +1,10 @@
-import React from "react";
-import ButtonItem from "@/components/button/Button";
-import Texts from "@/components/Texts";
-import heroImg from "@/assets/heroImg.png";
-import map from "@/assets/map.png";
+import React from 'react';
+import ButtonItem from '@/components/button/Button';
+import Texts from '@/components/Texts';
+import heroImg from '@/assets/heroImg.png';
+import map from '@/assets/map.png';
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <div className="min-[970px]:h-screen max-[970px]:min-h-screen min-[1800px]:w-[1500px] max-[1800px]:w-[90%] mx-auto flex flex-col items-end justify-end ">
       <div className="relative h-[80%] ml-auto ">
@@ -14,16 +14,16 @@ const Hero = () => {
               Empowering Young Minds for Spiritual Growth and Purposeful Impact
             </h1>
             <Texts className="max-[970px]:text-center">
-              We are dedicated to nuturing spirital growth and inspiring
-              purposeful impact in the lives of young believers{" "}
+              We are dedicated to nuturing spirital growth and inspiring purposeful impact
+              in the lives of young believers{' '}
             </Texts>
             <ButtonItem variant="primary" className="max-[970px]:mx-auto">
-              Discover Your Purpose Today!{" "}
+              Discover Your Purpose Today!{' '}
             </ButtonItem>
             <div>
               <Texts variant="secondary" className="max-[970px]:text-center">
-                Where Faith and Fellowship excel, Join a community where you can
-                connect, grow and make a difference.
+                Where Faith and Fellowship excel, Join a community where you can connect,
+                grow and make a difference.
               </Texts>
             </div>
           </div>

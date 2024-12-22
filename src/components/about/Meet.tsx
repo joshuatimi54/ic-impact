@@ -1,4 +1,3 @@
-import React from "react";
 import Texts from "@/components/Texts";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
 import { MdOutlineWhatsapp } from "react-icons/md";

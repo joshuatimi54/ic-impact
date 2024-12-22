@@ -1,4 +1,3 @@
-import React from "react";
 import TeamMember from "./TeamMember";
 import Josh from "@/assets/Joshua.png";
 import Goodness from "@/assets/Goodness.png";
