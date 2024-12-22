@@ -52,7 +52,7 @@ const Faq: React.FC = () => {
             FAQs
           </h2>
         </div>
-        <div className="!bg-white max-w-[550px] min-[680px]:w-[550px] max-[680px]:w-[90%] flex flex-col items-center justify-center mt-[20px] pt-[40px] pb-[60px] rounded-[20px]">
+        <div className="!bg-white max-w-[550px] min-[680px]:w-[550px] max-[680px]:w-[90%] mx-auto flex flex-col items-center justify-center mt-[20px] pt-[40px] pb-[60px] rounded-[20px]">
           <ul className="flex flex-col items-start justify-center w-full gap-2">
             {faqs.map((faq, index: number) => (
               <li className="w-full" key={faq.id}>
