@@ -23,7 +23,7 @@ const OurVision = () => {
                 <strong>IC-IMPACT </strong>
                 <span>
                   {" "}
-                  is more than just a mentoorship platform it's a transformative
+                  is more than just a mentorship platform it's a transformative
                   haven
                 </span>
               </Texts>
