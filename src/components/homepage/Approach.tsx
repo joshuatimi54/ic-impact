@@ -134,7 +134,7 @@ const Approach = () => {
             </div>
 
             <div className="h-[150px]  max-[540px]:h-[190px] mx-auto w-[90%]">
-              <ol className="flex items-start gap-[20px]  relative">
+              <ol className="flex items-start gap-[20px] relative">
                 <div className="bg-white relative w-[40px] min-w-[40px] h-[40px] flex items-center justify-center rounded-full border-4 border-redish ">
                   <div className="bg-redish w-[85%] h-[85%] rounded-full"></div>
                 </div>
