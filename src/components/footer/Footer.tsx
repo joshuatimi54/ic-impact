@@ -1,56 +1,55 @@
-import React from "react";
-import logo from "@/assets/logo.png";
-import Texts from "../Texts";
-import { Mail, Phone } from "lucide-react";
-import { Link } from "react-router-dom";
-import { MdOutlineWhatsapp } from "react-icons/md";
-import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
+import logo from '@/assets/logo.png';
+import Texts from '../Texts';
+import { Mail, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { MdOutlineWhatsapp } from 'react-icons/md';
+import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa6';
 
 const Footer = () => {
   const community = [
     {
       id: 1,
-      title: "Vision",
+      title: 'Vision',
     },
     {
       id: 2,
-      title: "Mission",
+      title: 'Mission',
     },
     {
       id: 3,
-      title: "Circle of Impact",
+      title: 'Circle of Impact',
     },
     {
       id: 4,
-      title: "Inner-Circle of Impact",
+      title: 'Inner-Circle of Impact',
     },
   ];
 
   const pages = [
     {
       id: 1,
-      page: "Home",
-      path: "/",
+      page: 'Home',
+      path: '/',
     },
     {
       id: 2,
-      page: "About",
-      path: "/about",
+      page: 'About',
+      path: '/about',
     },
     {
       id: 3,
-      page: "Community",
-      path: "/community",
+      page: 'Community',
+      path: '/community',
     },
     {
       id: 4,
-      page: "Contact",
-      path: "/contact",
+      page: 'Contact',
+      path: '/contact',
     },
     {
       id: 5,
-      page: "Blog",
-      path: "/blog",
+      page: 'Blog',
+      path: '/blog',
     },
   ];
   return (
@@ -62,15 +61,14 @@ const Footer = () => {
               <img src={logo} alt="img" />
             </div>
             <Texts className="max-w-[300px]">
-              {" "}
-              Learn about our mission to inspire, empower, and equip young
-              individuals for spiritual growth, personal success, and societal
-              transformation
+              {' '}
+              Learn about our mission to inspire, empower, and equip young individuals for
+              spiritual growth, personal success, and societal transformation
             </Texts>
           </div>
           <div className="flex flex-col items-start gap-4">
             <h2 className="scroll-m-20 font-sourceSans font-bold tracking-tight text-[20px]">
-              Community{" "}
+              Community{' '}
             </h2>
             <ul>
               {community.map((res) => (
@@ -82,18 +80,16 @@ const Footer = () => {
           </div>
           <div className="flex flex-col items-start gap-4">
             <h2 className="scroll-m-20 font-sourceSans font-bold tracking-tight text-[20px]">
-              Contact{" "}
+              Contact{' '}
             </h2>
             <ul className="flex flex-col gap-2">
               <li className=" flex items-center gap-[7px]">
                 <span className="pt-1">{<Mail size={16} />} </span>
-                <a href="mailto:Support@ic-impact.com">
-                  Support@ic-impact.com{" "}
-                </a>
+                <a href="mailto:Support@ic-impact.com">Support@ic-impact.com </a>
               </li>
               <li className=" flex items-center gap-[7px]">
                 <span className="">{<Phone size={16} />} </span>
-                <span>+234 1234 6789 </span>{" "}
+                <span>+234 1234 6789 </span>{' '}
               </li>
             </ul>
           </div>
@@ -115,17 +111,15 @@ const Footer = () => {
             </h2>
             <ul className="flex items-start gap-4">
               <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
-                {<MdOutlineWhatsapp />}{" "}
+                {<MdOutlineWhatsapp />}{' '}
               </li>
               <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
-                {<FaFacebook />}{" "}
+                {<FaFacebook />}{' '}
               </li>
               <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
-                {<FaInstagram />}{" "}
+                {<FaInstagram />}{' '}
               </li>
-              <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
-                {<FaTiktok />}{" "}
-              </li>
+              <li className="p-2 bg-[#E4E4E4] text-black rounded-md">{<FaTiktok />} </li>
             </ul>
           </div>
         </div>
