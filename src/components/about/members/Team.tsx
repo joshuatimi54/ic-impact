@@ -18,7 +18,7 @@ const Team = () => {
         ref={refOne}
         className="min-[1800px]:w-[1500px] max-[1800px]:w-[90%] mx-auto flex max-[1100px]:flex-wrap min-[580px]:items-start max-[580px]:items-center justify-between gap-y-[30px] gap-x-[20px] max-[850px]:my-[50px]"
       >
-        <FadeIn inView={inView} up upValue={40} opacity={false} delay={0.2}>
+        <FadeIn className='mx-auto' inView={inView} up upValue={40} opacity={false} delay={0.2}>
           <TeamMember
             image={Josh}
             imageAlt={`${Josh} Image`}
@@ -26,7 +26,7 @@ const Team = () => {
             memberPosition="Community Content Writer"
           />
         </FadeIn>
-        <FadeIn inView={inView} up upValue={40} opacity={false} delay={0.5}>
+        <FadeIn className='mx-auto' inView={inView} up upValue={40} opacity={false} delay={0.5}>
           <TeamMember
             image={Goodness}
             imageAlt={`${Goodness} Image`}
@@ -34,7 +34,7 @@ const Team = () => {
             memberPosition="Community Manager"
           />
         </FadeIn>
-        <FadeIn inView={inView} up upValue={40} opacity={false} delay={0.8}>
+        <FadeIn className='mx-auto' inView={inView} up upValue={40} opacity={false} delay={0.8}>
           <TeamMember
             image={Joy}
             imageAlt={`${Joy} Image`}
@@ -42,7 +42,7 @@ const Team = () => {
             memberPosition="Community Brand Strategist"
           />
         </FadeIn>
-        <FadeIn inView={inView} up upValue={50} opacity={false} delay={1.1}>
+        <FadeIn className='mx-auto' inView={inView} up upValue={50} opacity={false} delay={1.1}>
           <TeamMember
             image={Chidi}
             imageAlt={`${Chidi} Image`}
