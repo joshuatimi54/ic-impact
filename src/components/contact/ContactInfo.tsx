@@ -18,7 +18,7 @@ const ContactInfo = () => {
             </span>
             <span>
               or email us at:{' '}
-              <a href="mailto:support@ic-impact@gmail.com">
+              <a href="mailto:support@ic-impact@gmail.com" rel="noopener noreferrer">
                 <strong>support@ic-impact@gmail.com</strong>{' '}
               </a>{' '}
             </span>

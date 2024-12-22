@@ -85,7 +85,9 @@ const Footer = () => {
             <ul className="flex flex-col gap-2">
               <li className=" flex items-center gap-[7px]">
                 <span className="pt-1">{<Mail size={16} />} </span>
-                <a href="mailto:Support@ic-impact.com">Support@ic-impact.com </a>
+                <a href="mailto:Support@ic-impact.com" rel="noopener noreferrer">
+                  Support@ic-impact.com{' '}
+                </a>
               </li>
               <li className=" flex items-center gap-[7px]">
                 <span className="">{<Phone size={16} />} </span>
