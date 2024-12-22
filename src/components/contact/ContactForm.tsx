@@ -47,7 +47,7 @@ const ContactForm: React.FC = () => {
       </div>
       <div className="flex flex-col gap-4 items-start">
         <div className="flex flex-col mx-auto gap-2 w-[90%] max-[500px]:w-full">
-          <label htmlFor="firstName" className="text-[14px] font-sourceSansBold">
+          <label htmlFor="firstName" className="text-[16px] font-sourceSansBold">
             First name{' '}
           </label>
           <Input
@@ -63,7 +63,7 @@ const ContactForm: React.FC = () => {
           )}
         </div>
         <div className="flex flex-col mx-auto gap-2 w-[90%] max-[500px]:w-full">
-          <label htmlFor="lastName" className="text-[14px] font-sourceSansBold">
+          <label htmlFor="lastName" className="text-[16px] font-sourceSansBold">
             Last name{' '}
           </label>
           <Input
@@ -79,7 +79,7 @@ const ContactForm: React.FC = () => {
           )}
         </div>
         <div className="flex flex-col mx-auto gap-2 w-[90%] max-[500px]:w-full">
-          <label htmlFor="email" className="text-[14px] font-sourceSansBold">
+          <label htmlFor="email" className="text-[16px] font-sourceSansBold">
             Email Address
           </label>
           <Input
@@ -95,7 +95,7 @@ const ContactForm: React.FC = () => {
           )}
         </div>
         <div className="flex flex-col mx-auto gap-2 w-[90%] max-[500px]:w-full">
-          <label htmlFor="telephone" className="text-[14px] font-sourceSansBold">
+          <label htmlFor="telephone" className="text-[16px] font-sourceSansBold">
             Phone No
           </label>
           <Input
@@ -111,7 +111,7 @@ const ContactForm: React.FC = () => {
           )}
         </div>
         <div className="flex flex-col mx-auto gap-2 w-[90%] max-[500px]:w-full">
-          <label htmlFor="message" className="text-[14px] font-sourceSansBold">
+          <label htmlFor="message" className="text-[16px] font-sourceSansBold">
             Message
           </label>
           <Textarea
