@@ -9,7 +9,7 @@ import { useInView } from 'react-intersection-observer';
 const Team = () => {
   const [refOne, inView] = useInView({
     threshold: 0.3,
-    triggerOnce: false,
+    triggerOnce: true,
   });
 
   return (
