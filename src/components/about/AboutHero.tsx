@@ -7,7 +7,7 @@ const AboutHero: React.FC = () => {
     <div>
       <PagesHero
         bgImage={dune}
-        mainConStyle="h-[60vh] max-[540px]:h-[70vh] w-full"
+        mainConStyle="h-[60vh] max-[540px]:h-[60vh] w-full"
         header="About Us"
         headerStyle="text-[40px] leading-[55px]"
         subText=" From Vision to Impact: The Story Behind IC-IMPACT Commmnity"
