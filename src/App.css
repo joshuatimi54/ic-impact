@@ -37,10 +37,10 @@
           transition: opacity 0.5s ease;
         }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .line-animation, .secondLineAnimation {
-    bottom: -155px;
-    height: 150px;
+    bottom: -185px;
+    height: 180px;
   }
 }
 
