@@ -10,7 +10,7 @@ const ContactHero: React.FC = () => {
         header="Contact Us"
         subHeader="Get in Touch"
         subText="We're here to help. Reach out to us with your questions or feedback."
-        mainConStyle="h-[60vh] max-[600px]:h-[70vh] max-[480px]:h-[80vh] w-[80%] mx-auto"
+        mainConStyle="h-[60vh] max-[600px]:h-[70vh] max-[480px]:h-[70vh] w-[80%] mx-auto"
         subConHeaderStyle="scroll-m-20 tracking-tight text-[20px] !font-extrabold"
         subConStyle="max-w-[520px] text-center mt-1"
         headerStyle="text-[35px]"
