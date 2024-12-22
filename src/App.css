@@ -1,0 +1,38 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ .line-animation {
+          position: absolute;
+          left: 45%;
+          bottom: -125px; /* Start above the circle */
+          height: 120px; /* Final height */
+          width: 1px;
+          border-left: 2px dashed rgb(0, 0, 0, 0.5);
+          transform-origin: top; /* Set the origin for scaling */
+          transform: scaleY(0); /* Start with scaleY 0 */
+        }
+
+         .secondLineAnimation {
+          position: absolute;
+          left: 45%;
+          bottom: -125px; /* Start above the circle */
+          height: 120px; /* Final height */
+          width: 1px;
+          border-left: 2px solid rgb(0, 0, 0, 0.5);
+          transform-origin: top; /* Set the origin for scaling */
+          transform: scaleY(0); /* Start with scaleY 0 */
+        }
+
+        .draw {
+          transform: scaleY(1); /* Grow to full height */
+        }
+
+        .fade-in {
+          opacity: 1;
+          transition: opacity 0.5s ease;
+        }
+
+        
