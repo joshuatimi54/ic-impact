@@ -14,9 +14,9 @@ const FirstStep = () => {
     <div>
       <div
         ref={refOne}
-        className=" min-[1800px]:w-[1500px] max-[1800px]:w-[90%] mx-auto flex max-[980px]:flex-col-reverse items-center justify-between gap-[20px] max-[980px]:mb-[50px]"
+        className="min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto flex max-[980px]:flex-col-reverse items-center justify-between gap-[20px] max-[980px]:mb-[50px]"
       >
-        <div>
+        <div className="">
           <FadeIn up={false} inView={inView}>
             <div className="flex flex-col gap-4 items-start max-w-[500px]">
               <Texts>
@@ -34,7 +34,9 @@ const FirstStep = () => {
               </Texts>
             </div>
           </FadeIn>
-          <ButtonItem className="mx-auto mt-[30px]">Take the First Step</ButtonItem>
+          <ButtonItem className="max-[950px]:flex justify-center mx-auto mt-[30px]">
+            Take the First Step
+          </ButtonItem>
         </div>
         <div className="max-w-[500px]">
           <img src={Pyramidic} alt="img" />

@@ -13,7 +13,7 @@ const Meet = () => {
 
   return (
     <div className="min-h-[100vh] flex flex-col items-center justify-center ">
-      <div className="min-[1800px]:w-[1500px] max-[1800px]:w-[90%] mx-auto ">
+      <div className="min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto ">
         <h2 className="flex flex-col items-start font-rozanovaBold scroll-m-20 text-[35px] max-[900px]:text-[30px] max-[480px]:text-[24px] tracking-tight mb-4 max-[850px]:mt-[40px] ">
           <span>Meet the Community</span>
           <span>Team Members</span>
@@ -46,7 +46,7 @@ const Meet = () => {
                 IC-IMPACT community with humility and grace.
               </Texts>
             </section>
-            <ul className="flex items-start gap-4 mt-[30px]">
+            <ul className="flex items-start gap-4 mt-[10px]">
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
                 animate={{
@@ -59,7 +59,13 @@ const Meet = () => {
                 }}
                 className="p-2 bg-[#E4E4E4] text-black rounded-md"
               >
-                {<MdOutlineWhatsapp />}{' '}
+                <a
+                  href="https://bit.ly/icimpactcommunity"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {<MdOutlineWhatsapp />}{' '}
+                </a>
               </motion.li>
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
@@ -73,7 +79,13 @@ const Meet = () => {
                 }}
                 className="p-2 bg-[#E4E4E4] text-black rounded-md"
               >
-                {<FaFacebook />}{' '}
+                <a
+                  href="https://www.facebook.com/ic.impactcommunity?mibextid=ZbWKwL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {<FaFacebook />}{' '}
+                </a>
               </motion.li>
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
@@ -87,7 +99,13 @@ const Meet = () => {
                 }}
                 className="p-2 bg-[#E4E4E4] text-black rounded-md"
               >
-                {<FaInstagram />}{' '}
+                <a
+                  href="https://www.instagram.com/ic_impactcommunity/profilecard/?igsh=MXE5N3NoNWJqZTgzNg=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {<FaInstagram />}{' '}
+                </a>
               </motion.li>
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
@@ -100,7 +118,13 @@ const Meet = () => {
                 }}
                 className="p-2 bg-[#E4E4E4] text-black rounded-md"
               >
-                {<FaTiktok />}{' '}
+                <a
+                  href="https://www.tiktok.com/@tomiwa_jeph?_t=8sROCozm33l&_r=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {<FaTiktok />}{' '}
+                </a>
               </motion.li>
             </ul>
           </div>

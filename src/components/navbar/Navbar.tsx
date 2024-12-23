@@ -40,10 +40,12 @@ const Navbar: React.FC = () => {
   return (
     <nav>
       <div className="bg-white fixed top-0 inset-x-0 z-[99] w-full">
-        <div className="min-[1800px]:w-[1500px] max-[1800px]:w-[90%] mx-auto bg-white">
+        <div className="min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto bg-white">
           <div className="flex items-center justify-between gap-4 py-3">
             <div>
-              <img src={Logo} alt="img" />
+              <Link to="/">
+                <img src={Logo} alt="img" />
+              </Link>
             </div>
             <ul className="flex items-center justify-between gap-[30px] font-rozanovaBold max-[900px]:hidden">
               {navItem.map((item) => (

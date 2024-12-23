@@ -17,7 +17,7 @@ const TeamMembers = () => {
 
   return (
     <div className="min-[850px]:h-[80vh] max-[850px]:min-h-[70vh] max-[430px]:min-h-[100vh] pb-[90px] bg-greyish flex flex-col items-center max-[850px]:items-start justify-center max-[850px]:justify-start ">
-      <div className="min-[1800px]:w-[1500px] max-[1800px]:w-[90%] mx-auto h-[80%]">
+      <div className="min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto h-[80%]">
         <div className="flex flex-col">
           <h2 className="flex flex-col items-start gap-[3px] scroll-m-20 font-rozanovaBold font-bold tracking-tight text-[30px] max-[850px]:mt-[40px] max-[850px]:mb-3">
             {' '}
@@ -59,11 +59,11 @@ const TeamMembers = () => {
                   opacity: inViewOne ? 1 : 0,
                   y: inViewOne ? 0 : 20,
                 }}
-                className="absolute left-[-20px] top-[-50px]  z-[2]"
+                className="absolute left-[-20px] top-[-50px] z-[2]"
               >
                 <div className="bg-yellowish relative overflow-hidden rounded-[10px] w-[120px] h-[140px]">
                   <img
-                    className="w-full h-auto mt-4 relative z-10"
+                    className="w-full h-auto mt-4 relative z-[2]"
                     src={Shepherd}
                     alt="img"
                   />
@@ -72,7 +72,7 @@ const TeamMembers = () => {
                     src={ShepherdStar}
                     alt="img"
                   />
-                  <span className="absolute bottom-[0px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white z-3 rounded-[15px] text-[12px] px-3">
+                  <span className="absolute bottom-[0px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white z-[3] rounded-[15px] text-[12px] px-3">
                     Shepherd{' '}
                   </span>
                 </div>

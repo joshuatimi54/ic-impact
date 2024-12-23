@@ -11,7 +11,7 @@ const Community: React.FC = () => {
     triggerOnce: false,
   });
   return (
-    <div className="min-[1100px]:h-screen max-[1100px]:min-h-screen min-[1800px]:w-[1500px] max-[1800px]:w-[90%] mx-auto mb-[50px]">
+    <div className="min-[1100px]:h-screen max-[1100px]:min-h-screen min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto mb-[50px]">
       <div ref={refOne}>
         <h2 className="text-[35px] max-[600px]:text-[24px] font-rozanovaThin font-extrabold">
           <BlurText inview={inViewOne}>IC-IMPACT Community </BlurText>

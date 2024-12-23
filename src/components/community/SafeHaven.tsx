@@ -14,7 +14,7 @@ const SafeHaven: React.FC = () => {
 
   return (
     <div className="min-h-[90vh] flex flex-col items-center justify-center">
-      <div className="flex max-[980px]:flex-col items-center justify-between gap-[30px] min-[1800px]:w-[1500px] max-[1800px]:w-[90%] mx-auto  max-[980px]:mt-[30px] max-[980px]:mb-[50px]">
+      <div className="flex max-[980px]:flex-col items-center justify-between gap-[30px] min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto  max-[980px]:mt-[30px] max-[980px]:mb-[50px]">
         <div ref={refOne} className="flex items-center gap-[20px]">
           <FadeIn
             inView={inView}

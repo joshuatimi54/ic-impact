@@ -16,9 +16,16 @@ const Team = () => {
     <div>
       <div
         ref={refOne}
-        className="min-[1800px]:w-[1500px] max-[1800px]:w-[90%] mx-auto flex max-[1100px]:flex-wrap min-[580px]:items-start max-[580px]:items-center justify-between gap-y-[30px] gap-x-[20px] max-[850px]:my-[50px]"
+        className="min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto flex max-[1100px]:flex-wrap min-[580px]:items-start max-[580px]:items-center justify-between gap-y-[30px] gap-x-[20px] max-[850px]:my-[50px]"
       >
-        <FadeIn className='mx-auto' inView={inView} up upValue={40} opacity={false} delay={0.2}>
+        <FadeIn
+          className="mx-auto"
+          inView={inView}
+          up
+          upValue={40}
+          opacity={false}
+          delay={0.2}
+        >
           <TeamMember
             image={Josh}
             imageAlt={`${Josh} Image`}
@@ -26,23 +33,44 @@ const Team = () => {
             memberPosition="Community Content Writer"
           />
         </FadeIn>
-        <FadeIn className='mx-auto' inView={inView} up upValue={40} opacity={false} delay={0.5}>
+        <FadeIn
+          className="mx-auto"
+          inView={inView}
+          up
+          upValue={40}
+          opacity={false}
+          delay={0.5}
+        >
           <TeamMember
             image={Goodness}
             imageAlt={`${Goodness} Image`}
-            memberName="Adewusi Goodness"
+            memberName="Adedokun Joy"
             memberPosition="Community Manager"
           />
         </FadeIn>
-        <FadeIn className='mx-auto' inView={inView} up upValue={40} opacity={false} delay={0.8}>
+        <FadeIn
+          className="mx-auto"
+          inView={inView}
+          up
+          upValue={40}
+          opacity={false}
+          delay={0.8}
+        >
           <TeamMember
             image={Joy}
             imageAlt={`${Joy} Image`}
-            memberName="Adedokun Joy"
+            memberName="Adewusi Goodness"
             memberPosition="Community Brand Strategist"
           />
         </FadeIn>
-        <FadeIn className='mx-auto' inView={inView} up upValue={50} opacity={false} delay={1.1}>
+        <FadeIn
+          className="mx-auto"
+          inView={inView}
+          up
+          upValue={50}
+          opacity={false}
+          delay={1.1}
+        >
           <TeamMember
             image={Chidi}
             imageAlt={`${Chidi} Image`}

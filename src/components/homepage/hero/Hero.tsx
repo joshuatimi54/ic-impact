@@ -6,8 +6,8 @@ import map from '@/assets/map.webp';
 
 const Hero: React.FC = () => {
   return (
-    <div className="min-[970px]:h-screen max-[970px]:min-h-screen min-[1800px]:w-[1500px] max-[1800px]:w-[90%] mx-auto flex flex-col items-end justify-end ">
-      <div className="relative h-[80%] ml-auto ">
+    <div className="min-[970px]:h-[100vh] max-[970px]:min-h-screen min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto flex flex-col items-end justify-end ">
+      <div className="relative h-[80%] ml-auto">
         <div className="flex max-[970px]:flex-col-reverse max-[970px]:items-start gap-4">
           <div className="flex flex-col items-start gap-[25px] max-[970px]:pt-[30px] max-[970px]:pb-[70px]">
             <h1 className="scroll-m-20 font-rozanovaBold font-semibold max-w-[900px] min-[1800px]:text-[45px] min-[1200px]:leading-[60px] min-[1200px]:text-[40px] max-[1200px]:text-[30px] max-[1200px]:leading-[50px] max-[670px]:text-[24px] max-[670px]:leading-[35px] tracking-tight max-[970px]:text-center ">

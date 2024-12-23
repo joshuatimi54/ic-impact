@@ -10,18 +10,22 @@ const Footer = () => {
     {
       id: 1,
       title: 'Vision',
+      path: '/community',
     },
     {
       id: 2,
       title: 'Mission',
+      path: '/community',
     },
     {
       id: 3,
       title: 'Circle of Impact',
+      path: '/community',
     },
     {
       id: 4,
       title: 'Inner-Circle of Impact',
+      path: '/community',
     },
   ];
 
@@ -54,11 +58,13 @@ const Footer = () => {
   ];
   return (
     <div className="bg-[#1C1C1C] flex flex-col items-center justify-center min-h-[60vh] py-[40px] text-white">
-      <div className="flex flex-col gap-[30px] min-[1800px]:w-[1500px] max-[1800px]:w-[90%]  h-[80%] mx-auto">
+      <div className="flex flex-col gap-[30px] min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] h-[80%] mx-auto">
         <div className="flex flex-wrap items-start justify-between gap-[30px]">
           <div className="flex flex-col items-start gap-4">
             <div className="w-[100px]">
-              <img src={logo} alt="img" />
+              <Link to="/">
+                <img src={logo} alt="img" />
+              </Link>
             </div>
             <Texts className="max-w-[300px]">
               {' '}
@@ -73,7 +79,7 @@ const Footer = () => {
             <ul>
               {community.map((res) => (
                 <li key={res.id}>
-                  <span>{res?.title} </span>
+                  <Link to={res.path}>{res.title}</Link>
                 </li>
               ))}
             </ul>
@@ -113,15 +119,42 @@ const Footer = () => {
             </h2>
             <ul className="flex items-start gap-4">
               <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
-                {<MdOutlineWhatsapp />}{' '}
+                <a
+                  href="https://bit.ly/icimpactcommunity"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {<MdOutlineWhatsapp />}{' '}
+                </a>
               </li>
               <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
-                {<FaFacebook />}{' '}
+                <a
+                  href="https://www.facebook.com/ic.impactcommunity?mibextid=ZbWKwL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {<FaFacebook />}{' '}
+                </a>
               </li>
               <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
-                {<FaInstagram />}{' '}
+                <a
+                  href="https://www.instagram.com/ic_impactcommunity/profilecard/?igsh=MXE5N3NoNWJqZTgzNg=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {<FaInstagram />}{' '}
+                </a>
               </li>
-              <li className="p-2 bg-[#E4E4E4] text-black rounded-md">{<FaTiktok />} </li>
+              <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
+                <a
+                  href="https://www.tiktok.com/@tomiwa_jeph?_t=8sROCozm33l&_r=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {' '}
+                  {<FaTiktok />}{' '}
+                </a>
+              </li>
             </ul>
           </div>
         </div>

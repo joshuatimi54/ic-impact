@@ -38,7 +38,7 @@ const ContactForm: React.FC = () => {
       style={{
         boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
       }}
-      className="min-w-[300px] max-[900px]:mx-auto max-[900px]:my-[50px] w-[400px] max-[500px]:w-full rounded-[30px] border border-black/50 px-[20px] py-[30px]"
+      className="min-w-[300px] max-[900px]:mx-auto max-[900px]:my-[50px] w-[500px] max-[500px]:w-full rounded-[30px] border border-black/50 px-[20px] py-[30px]"
     >
       <div>
         <h2 className="scroll-m-20 text-[35px] font-semibold tracking-tight py-3 text-center mb-3">
