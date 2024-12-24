@@ -37,7 +37,7 @@ const Structure: React.FC<IProps> = ({ heading, text, image, bgColor, style }) =
           </h3>
           <Texts className="max-w-[250px] max-[500px]:max-w-full mt-4">{text}</Texts>
           <Texts className=" mt-[30px] cursor-pointer text-cyanish">
-            <Link className="flex items-center gap-3 " to="/community">
+            <Link className="flex items-center gap-3 mx-auto " to="/community">
               <span>Find Out More</span>
               <span>{<MoveRight />}</span>{' '}
             </Link>

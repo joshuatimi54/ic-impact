@@ -44,7 +44,9 @@ const TeamMembers = () => {
                   become a leader of impact.{' '}
                 </Texts>
               </section>
-              <ButtonItem className="w-[150px]">Meet The Team </ButtonItem>
+              <ButtonItem className="w-[150px] max-[850px]:mx-auto">
+                Meet The Team{' '}
+              </ButtonItem>
             </div>
             <div className="relative max-[850px]:mx-auto">
               <div className="bg-white w-[300px] h-[300px] rounded-full flex flex-col justify-center items-center">
