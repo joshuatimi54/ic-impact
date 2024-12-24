@@ -5,7 +5,7 @@ import ContactForm from './ContactForm';
 const ContactInfo = () => {
   return (
     <div>
-      <div className="min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto min-[900px]:flex max-[900px]:flex-col min-[900px]:items-end max-[900px]:items-center justify-between gap-[30px] my-[50px]">
+      <div className="min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto min-[900px]:flex max-[900px]:flex-col min-[900px]:items-end max-[900px]:items-center justify-between gap-[30px] my-[50px]">
         <div className="flex flex-col max-[900px]:mx-auto gap-4 max-w-[350px]">
           <Texts> Location/Address: Find us at No 4 FUTA South Gate Junction...</Texts>
           <Texts>

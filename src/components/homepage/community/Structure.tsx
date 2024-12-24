@@ -18,11 +18,11 @@ const Structure: React.FC<IProps> = ({ heading, text, image, bgColor, style }) =
     <div className="max-[500px]:w-full">
       <div
         style={{ boxShadow: '0px 4px 4px 0px #00000040' }}
-        className="flex max-[500px]:flex-col items-start gap-[20px] min-h-[300px] min-[500px]:max-h-[600px] h-[70vh] max-[500px]:min-h-[100%] max-[500px]:h-full "
+        className="flex max-[500px]:flex-col items-start gap-[20px] h-[600px] min-h-[300px] min-[500px]:max-h-[500px] max-[500px]:min-h-[100%] max-[500px]:h-full "
       >
         <div
           className={clsx(
-            `h-full max-[500px]:min-h-[250px] max-[500px]:w-full relative z-10 flex flex-col items-center justify-center mx-auto`,
+            `min-h-full max-[500px]:min-h-[250px] max-[500px]:w-full relative z-10 flex flex-col items-center justify-center mx-auto`,
             bgColor === 'orangish' && 'bg-orangish',
             bgColor === 'redish' && 'bg-redish'
           )}

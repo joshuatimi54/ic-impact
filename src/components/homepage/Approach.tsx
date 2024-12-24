@@ -22,7 +22,7 @@ const Approach = () => {
       }}
       className="min-h-[100vh]"
     >
-      <div className="min-[1800px]:w-[1500px] max-[1800px]:w-[90%] mx-auto">
+      <div className="min-[1800px]:w-[1200px] max-[1800px]:w-[90%] mx-auto">
         <div className="flex flex-col  gap-4 items-center text-center">
           <h1 className="scroll-m-20 mt-[80px] font-rozanovaBold font-bold tracking-tight text-[30px] leading-[10px]">
             Our Approach{' '}

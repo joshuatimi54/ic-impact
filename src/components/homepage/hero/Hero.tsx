@@ -6,7 +6,7 @@ import map from '@/assets/map.webp';
 
 const Hero: React.FC = () => {
   return (
-    <div className="min-[970px]:h-[100vh] max-[970px]:min-h-screen min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto flex flex-col items-end justify-end ">
+    <div className="min-[970px]:h-[100vh] max-[970px]:min-h-screen min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto flex flex-col items-end justify-end ">
       <div className="relative h-[80%] ml-auto">
         <div className="flex max-[970px]:flex-col-reverse max-[970px]:items-start gap-4">
           <div className="flex flex-col items-start gap-[25px] max-[970px]:pt-[30px] max-[970px]:pb-[70px]">

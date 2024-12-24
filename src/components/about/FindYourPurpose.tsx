@@ -14,7 +14,7 @@ const FindYourPurpose = () => {
     <div className="min-h-[80vh] flex flex-col items-center justify-center">
       <div
         ref={refOne}
-        className="min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto flex flex-wrap flex-row-reverse items-center justify-between gap-[30px] max-[950px]:my-[50px]"
+        className="min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto flex flex-wrap flex-row-reverse items-center justify-between gap-[30px] max-[950px]:my-[50px]"
       >
         <div className="relative max-w-[400px] max-[950px]:mx-auto">
           <img className="rounded-[30px]" src={groupSelfie} alt="img" />

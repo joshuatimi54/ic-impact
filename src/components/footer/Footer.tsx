@@ -58,7 +58,7 @@ const Footer = () => {
   ];
   return (
     <div className="bg-[#1C1C1C] flex flex-col items-center justify-center min-h-[60vh] py-[40px] text-white">
-      <div className="flex flex-col gap-[30px] min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] h-[80%] mx-auto">
+      <div className="flex flex-col gap-[30px] min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] h-[80%] mx-auto">
         <div className="flex flex-wrap items-start justify-between gap-[30px]">
           <div className="flex flex-col items-start gap-4">
             <div className="w-[100px]">

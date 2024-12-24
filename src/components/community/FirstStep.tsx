@@ -14,7 +14,7 @@ const FirstStep = () => {
     <div>
       <div
         ref={refOne}
-        className="min-[1800px]:max-w-[1400px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto flex max-[980px]:flex-col-reverse items-center justify-between gap-[20px] max-[980px]:mb-[50px]"
+        className="min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto flex max-[980px]:flex-col-reverse items-center justify-between gap-[20px] max-[980px]:mb-[50px]"
       >
         <div className="">
           <FadeIn up={false} inView={inView}>
