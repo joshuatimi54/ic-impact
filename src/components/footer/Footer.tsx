@@ -92,7 +92,7 @@ const Footer = () => {
               <li className=" flex items-center gap-[7px]">
                 <span className="pt-1">{<Mail size={16} />} </span>
                 <a href="mailto:Support@ic-impact.com" rel="noopener noreferrer">
-                  Support@ic-impact.com{' '}
+                  support@ic-impact.com{' '}
                 </a>
               </li>
               <li className=" flex items-center gap-[7px]">

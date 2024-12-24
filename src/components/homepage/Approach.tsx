@@ -94,7 +94,7 @@ const Approach = () => {
 
             {/* //!Second Line */}
             <div
-              className="h-[150px] max-[540px]:h-[190px] mx-auto max-[540px]:mt-4 w-[90%]"
+              className="h-[150px] max-[540px]:h-[190px] mx-auto max-[540px]:mt-6 w-[90%]"
               role="region"
               aria-labelledby="guide-by-purpose"
             >
@@ -140,7 +140,7 @@ const Approach = () => {
 
             {/* Third Content Block */}
             <div
-              className="h-[150px] max-[540px]:h-[190px] mx-auto w-[90%]"
+              className="h-[150px] max-[540px]:h-[190px] mx-auto max-[540px]:mt-4 w-[90%]"
               role="region"
               aria-labelledby="sustaining-impact"
             >
@@ -183,7 +183,7 @@ const Approach = () => {
             </div>
 
             <div
-              className="h-[150px] max-[540px]:h-[190px] mx-auto w-[90%]"
+              className="h-[150px] max-[540px]:h-[190px] mx-auto max-[540px]:mt-4 w-[90%]"
               role="region"
               aria-labelledby="continuous-improvements"
             >

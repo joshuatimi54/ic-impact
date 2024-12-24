@@ -8,7 +8,7 @@ const BlogHero = () => {
         bgImage={dune}
         mainConStyle="h-[60vh] max-[540px]:h-[70vh] w-full"
         header="Welcome to our blog"
-        headerStyle="text-[40px] leading-[55px]"
+        headerStyle="text-[40px] max-[600px]:text-[30px] text-center leading-[55px]"
         subHeader="See latest updates on IC-IMPACT"
         subConStyle="w-[90%]"
       />

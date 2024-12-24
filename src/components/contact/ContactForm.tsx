@@ -18,11 +18,11 @@ const ContactForm: React.FC = () => {
       message: '',
     },
     validationSchema: Yup.object({
-      firstName: Yup.string().required('Plan is required').nullable(),
-      lastName: Yup.string().required('Period is required').nullable(),
-      email: Yup.string().required('Number of seat is required').nullable(),
-      telephone: Yup.string().required('Number of seat is required').nullable(),
-      message: Yup.string().required('Number of seat is required').nullable(),
+      firstName: Yup.string().required('First Name is required').nullable(),
+      lastName: Yup.string().required('Last Name is required').nullable(),
+      email: Yup.string().required('Email is required').nullable(),
+      telephone: Yup.string().required('Telephone is required').nullable(),
+      message: Yup.string().required('Message is required').nullable(),
     }),
     onSubmit: (values, { setFieldTouched }) => {
       setIsSubmitting(true);
@@ -56,6 +56,7 @@ const ContactForm: React.FC = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleChange}
             className="w-full"
+            id="firstName"
             placeholder="Enter first name here"
           />
           {formik.errors.firstName && (
@@ -67,7 +68,7 @@ const ContactForm: React.FC = () => {
             Last name{' '}
           </label>
           <Input
-            name="lasttName"
+            name="lastName"
             type="text"
             onChange={formik.handleChange}
             onBlur={formik.handleChange}
