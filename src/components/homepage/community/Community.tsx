@@ -10,6 +10,7 @@ const Community: React.FC = () => {
     threshold: 0.3,
     triggerOnce: false,
   });
+
   return (
     <div className="min-h-screen min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto mb-[50px]">
       <div ref={refOne}>

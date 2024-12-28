@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ButtonItem from '../button/Button';
 import Logo from '@/assets/logo.webp';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 import clsx from 'clsx';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -37,6 +37,8 @@ const Navbar: React.FC = () => {
 
   const [isOpened, setIsOpened] = useState<boolean>(false);
 
+  const router = useLocation();
+
   return (
     <nav>
       <div className="bg-white fixed top-0 inset-x-0 z-[99] w-full">
@@ -50,17 +52,26 @@ const Navbar: React.FC = () => {
             <ul className="flex items-center justify-between gap-[30px] font-rozanovaBold max-[900px]:hidden">
               {navItem.map((item) => (
                 <li className="relative cursor-pointer group inline-block" key={item.id}>
-                  <Link to={item?.path}>{item?.name}</Link>
+                  <Link
+                    className={`${
+                      router?.pathname === item.path ? 'border-b-2 border-orangish' : ''
+                    }`}
+                    to={item?.path}
+                  >
+                    {item?.name}
+                  </Link>
                   <span className="absolute bottom-[-1px] left-0 w-full h-[2px] bg-orangish scale-x-0 origin-bottom-right group-hover:scale-x-100 group-hover:origin-bottom-left transition-transform duration-500 ease-out"></span>
                 </li>
               ))}
             </ul>
-            <ButtonItem
-              variant="primary"
-              className="px-[20px] py-1 flex max-[900px]:hidden"
-            >
-              Sign up
-            </ButtonItem>
+            <Link to="/signup">
+              <ButtonItem
+                variant="primary"
+                className="px-[20px] py-1 flex max-[900px]:hidden"
+              >
+                Sign up
+              </ButtonItem>
+            </Link>
             {isOpened ? (
               <button
                 onClick={() => setIsOpened(false)}
@@ -109,12 +120,14 @@ const Navbar: React.FC = () => {
                     </li>
                   ))}
                 </ul>
-                <ButtonItem
-                  variant="primary"
-                  className=" px-[20px] py-1 flex items-center justify-center mx-auto mt-4 min-[900px]:hidden"
-                >
-                  Sign up
-                </ButtonItem>
+                <Link to="/signup">
+                  <ButtonItem
+                    variant="primary"
+                    className=" px-[20px] py-1 flex items-center justify-center mx-auto mt-4 min-[900px]:hidden"
+                  >
+                    Sign up
+                  </ButtonItem>
+                </Link>
               </motion.div>
             )}
           </AnimatePresence>
