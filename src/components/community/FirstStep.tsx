@@ -3,6 +3,7 @@ import Texts from '../Texts';
 import FadeIn from '../animation/FadeIn';
 import ButtonItem from '../button/Button';
 import Pyramidic from '@/assets/pyramidic.webp';
+import Link from 'react-router-dom';
 
 const FirstStep = () => {
   const [refOne, inView] = useInView({
