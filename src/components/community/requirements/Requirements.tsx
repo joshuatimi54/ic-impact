@@ -3,6 +3,7 @@ import Structure from './Structure';
 import Texts from '@/components/Texts';
 import listElipse from '@/assets/listEllipse.png';
 import ButtonItem from '@/components/button/Button';
+import Link from 'react-router-dom';
 
 const Requirements: React.FC = () => {
   const List = [
@@ -60,7 +61,9 @@ const Requirements: React.FC = () => {
             </Structure>
           </div>
           <div className="flex justify-center mx-auto my-[60px]">
-            <ButtonItem className="">Join The Circle Now </ButtonItem>
+            <ButtonItem className="">
+              <Link to='/signup' >Join The Circle Now </Link>
+               </ButtonItem>
           </div>
         </div>
       </div>
