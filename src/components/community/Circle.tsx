@@ -1,4 +1,3 @@
-import React from 'react';
 import Texts from '../Texts';
 import listElipse from '@/assets/listEllipse.png';
 import groupSelfie from '@/assets/groupSelfie.png';

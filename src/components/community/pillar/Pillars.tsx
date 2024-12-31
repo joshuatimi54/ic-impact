@@ -1,4 +1,3 @@
-import React from 'react';
 import Structure from './Structure';
 import Texts from '@/components/Texts';
 

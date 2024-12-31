@@ -23,6 +23,7 @@ export default {
 			  yellowish: '#EFD100',
 			  greenish: '#68BC25',
 			  greyish: '#EEEEEE',
+			  inputGrey: '#F4F4F4'
 			},
 		  colors: {
 				 redish: '#C4000C',
