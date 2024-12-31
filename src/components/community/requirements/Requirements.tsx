@@ -3,7 +3,7 @@ import Structure from './Structure';
 import Texts from '@/components/Texts';
 import listElipse from '@/assets/listEllipse.png';
 import ButtonItem from '@/components/button/Button';
-import Link from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 const Requirements: React.FC = () => {
   const List = [
