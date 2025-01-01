@@ -36,7 +36,7 @@ const FirstStep = () => {
             </div>
           </FadeIn>
           <ButtonItem className="max-[950px]:flex justify-center mx-auto mt-[30px]">
-            <Link to="/signup">Take the First Step</Link>
+            <Link to="/signup">Take the First Step </Link>
           </ButtonItem>
         </div>
         <div className="max-w-[500px]">
