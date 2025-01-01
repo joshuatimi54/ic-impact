@@ -3,6 +3,7 @@ import Texts from '../Texts';
 import ButtonItem from '../button/Button';
 import BlurText from '../animation/BlurText';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 
 const Discover = () => {
   const [refOne, inViewOne] = useInView({
@@ -42,8 +43,7 @@ const Discover = () => {
             God-given ideas to fruition and glorify His name through purposeful action.{' '}
           </Texts>
           <ButtonItem className="bg-greenish mt-2 w-fit px-6 py-2">
-            {' '}
-            Get The Full Story{' '}
+            <Link to="/about">Get The Full Story </Link>
           </ButtonItem>
         </div>
       </div>

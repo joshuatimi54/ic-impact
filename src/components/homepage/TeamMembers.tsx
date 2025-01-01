@@ -9,6 +9,7 @@ import strategist from '@/assets/strategist.webp';
 import Ellipse from '@/assets/Ellipse.webp';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const TeamMembers = () => {
   const [refOne, inViewOne] = useInView({
@@ -46,7 +47,7 @@ const TeamMembers = () => {
                 </Texts>
               </section>
               <ButtonItem className="w-[150px] max-[850px]:mx-auto">
-                Meet The Team{' '}
+                <Link to="/about">Meet The Team</Link>{' '}
               </ButtonItem>
             </div>
             <div className="relative max-[850px]:mx-auto">
@@ -147,7 +148,7 @@ const TeamMembers = () => {
               >
                 <div className="bg-redish relative overflow-hidden rounded-[10px] w-[120px] h-[140px]">
                   <img
-                    className="w-full h-auto relative z-10"
+                    className="w-full h-auto relative mt-[35px] z-10"
                     src={strategist}
                     alt="img"
                   />
@@ -156,7 +157,7 @@ const TeamMembers = () => {
                     src={Ellipse}
                     alt="img"
                   />
-                  <span className="absolute bottom-[0px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white z-3 rounded-[15px] text-[12px] px-3">
+                  <span className="absolute bottom-[10px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white z-[10] rounded-[15px] text-[12px] px-3">
                     Strategist
                   </span>
                 </div>

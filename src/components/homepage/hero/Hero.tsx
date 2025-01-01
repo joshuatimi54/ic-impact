@@ -3,6 +3,7 @@ import ButtonItem from '@/components/button/Button';
 import Texts from '@/components/Texts';
 import heroImg from '@/assets/heroImg.png';
 import map from '@/assets/map.webp';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
@@ -18,7 +19,7 @@ const Hero: React.FC = () => {
               in the lives of young believers{' '}
             </Texts>
             <ButtonItem variant="primary" className="max-[970px]:mx-auto">
-              Discover Your Purpose Today!{' '}
+              <Link to="/community">Discover Your Purpose Today!</Link>{' '}
             </ButtonItem>
             <div>
               <Texts variant="secondary" className="max-[970px]:text-center">
