@@ -3,6 +3,7 @@ import Texts from '../Texts';
 import FadeIn from '../animation/FadeIn';
 import ButtonItem from '../button/Button';
 import Pyramidic from '@/assets/pyramidic.webp';
+import { Link } from 'react-router-dom';
 
 const FirstStep = () => {
   const [refOne, inView] = useInView({
@@ -35,7 +36,7 @@ const FirstStep = () => {
             </div>
           </FadeIn>
           <ButtonItem className="max-[950px]:flex justify-center mx-auto mt-[30px]">
-            Take the First Step
+            <Link to="/signup">Take the First Step</Link>
           </ButtonItem>
         </div>
         <div className="max-w-[500px]">

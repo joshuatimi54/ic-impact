@@ -3,6 +3,7 @@ import dune from '@/assets/dune.webp';
 import Texts from '@/components/Texts';
 import actionImg from '@/assets/actionImg.webp';
 import ButtonItem from '@/components/button/Button';
+import { Link } from 'react-router-dom';
 
 const CallToAction: React.FC = () => {
   return (
@@ -20,7 +21,9 @@ const CallToAction: React.FC = () => {
           Join the Movement
         </h1>
         <Texts>Ready to make an impact?</Texts>
-        <ButtonItem className="mt-4">Sign Up</ButtonItem>
+        <ButtonItem className="mt-4">
+          <Link to="/signup">Sign Up</Link>
+        </ButtonItem>
       </div>
     </div>
   );

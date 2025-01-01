@@ -1,9 +1,12 @@
+import BlogCard from './blogUI/BlogCard';
+
 const BlogContent = () => {
   return (
-    <div className="h-[60vh] bg-greyish flex flex-col items-center justify-center">
-      <h2 className="scroll-m-20 font-rozanovaBold font-bold tracking-tight text-[30px] text-center leading-[40px]">
-        Coming Soon{" "}
+    <div className="border border-transparent bg-greyish">
+      <h2 className=" mt-[70px] scroll-m-20 font-rozanovaBold font-bold tracking-tight text-[30px] text-center leading-[40px]">
+        Coming Soon{' '}
       </h2>
+      <BlogCard />
     </div>
   );
 };

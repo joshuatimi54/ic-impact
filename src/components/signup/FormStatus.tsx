@@ -7,6 +7,7 @@ interface FormStatusProps {
   motionDirection: number;
   setCurrentIndex: (arg: number) => void;
 }
+
 const FormStatus: React.FC<FormStatusProps> = ({ motionDirection }) => {
   return (
     <motion.div
@@ -14,7 +15,7 @@ const FormStatus: React.FC<FormStatusProps> = ({ motionDirection }) => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ x: motionDirection, opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-white flex flex-col items-center justify-center h-[200px] w-[90%] "
+      className="bg-white flex flex-col items-center justify-center h-[200px] w-[100%] "
     >
       <div className="flex flex-col items-center gap-[40px]">
         <Texts className="flex items-center gap-2 text-green-500 text-[20px]">

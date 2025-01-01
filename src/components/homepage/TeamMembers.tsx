@@ -3,6 +3,7 @@ import ButtonItem from '../button/Button';
 import Josh from '@/assets/josh.webp';
 import manager from '@/assets/manager.webp';
 import Shepherd from '@/assets/Jeph.webp';
+import gooder from '@/assets/gooder.png';
 import ShepherdStar from '@/assets/shepherdStar.webp';
 import strategist from '@/assets/strategist.webp';
 import Ellipse from '@/assets/Ellipse.webp';
@@ -50,7 +51,10 @@ const TeamMembers = () => {
             </div>
             <div className="relative max-[850px]:mx-auto">
               <div className="bg-white w-[300px] h-[300px] rounded-full flex flex-col justify-center items-center">
-                <div className="bg-greyish w-[80%] h-[80%] rounded-full"></div>
+                <img
+                  src={Shepherd}
+                  className="bg-greenish w-[200px] h-[200px] object-cover rounded-full"
+                />
               </div>
               <motion.div
                 initial={{
@@ -61,12 +65,12 @@ const TeamMembers = () => {
                   opacity: inViewOne ? 1 : 0,
                   y: inViewOne ? 0 : 20,
                 }}
-                className="absolute left-[-20px] top-[-50px] z-[2]"
+                className="absolute left-[-40px] top-[-50px] z-[2]"
               >
                 <div className="bg-yellowish relative overflow-hidden rounded-[10px] w-[120px] h-[140px]">
                   <img
-                    className="w-full h-auto mt-4 relative z-[2]"
-                    src={Shepherd}
+                    className="w-full h-auto mt-6 relative z-[2]"
+                    src={gooder}
                     alt="img"
                   />
                   <img
@@ -93,7 +97,7 @@ const TeamMembers = () => {
                     delay: 0.5,
                   },
                 }}
-                className="absolute right-[10px] top-[20px] z-[2]"
+                className="absolute right-[-50px] top-[20px] max-[420px]:top-[-50px] max-[420px]:right-[-20px] z-[2]"
               >
                 <div className="bg-orangish relative overflow-hidden rounded-[10px] w-[120px] h-[140px]">
                   <img className="w-full h-auto mt-4" src={manager} alt="img" />
@@ -116,7 +120,7 @@ const TeamMembers = () => {
                     delay: 1,
                   },
                 }}
-                className="absolute left-[-20px] top-[140px] z-[2] "
+                className="absolute left-[-40px] top-[140px] z-[2] "
               >
                 <div className="bg-cyanish relative overflow-hidden rounded-[10px] w-[120px] h-[140px]">
                   <img className="w-full h-auto mt-4" src={Josh} alt="img" />
@@ -139,7 +143,7 @@ const TeamMembers = () => {
                     delay: 1.5,
                   },
                 }}
-                className="absolute right-[10px] bottom-[-50px] z-[2]"
+                className="absolute right-[-50px] bottom-[-50px] max-[420px]:right-[-20px] z-[2]"
               >
                 <div className="bg-redish relative overflow-hidden rounded-[10px] w-[120px] h-[140px]">
                   <img

@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import React from "react";
+import { motion } from 'framer-motion';
+import React from 'react';
 
 interface IProps {
   children: JSX.Element[] | JSX.Element;
@@ -26,15 +26,15 @@ const FadeIn: React.FC<IProps> = ({
     <motion.div
       initial={{
         opacity: 0,
-        y: upValue,
+        y: up && !inView ? 0 : !up && inView ? upValue : upValue,
       }}
       animate={{
-        opacity: !opacity ? "" : inView ? 1 : 0,
+        opacity: !opacity ? '' : inView ? 1 : 0,
         y: up && inView ? 0 : up && !inView ? upValue : 0,
         transition: {
           duration: 0.8,
           delay: delay ?? 0,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         },
       }}
       exit={{

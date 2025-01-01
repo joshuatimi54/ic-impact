@@ -1,3 +1,5 @@
+import SmoothScrolling from '@/components/animation/SmoothScrolling';
+import ScrollToTop from '@/components/button/ScrollToTop';
 import Footer from '@/components/footer/Footer';
 import SignUpForm from '@/components/signup/SignUpForm';
 import SignUpHero from '@/components/signup/SignUpHero';
@@ -5,12 +7,13 @@ import { ToastContainer } from 'react-toastify';
 
 const Signup = () => {
   return (
-    <div>
+    <SmoothScrolling>
+      <ScrollToTop />
       <ToastContainer />
       <SignUpHero />
       <SignUpForm />
       <Footer />
-    </div>
+    </SmoothScrolling>
   );
 };
 

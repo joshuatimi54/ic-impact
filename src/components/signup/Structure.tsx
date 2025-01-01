@@ -23,6 +23,9 @@ const Structure: React.FC<IProps> = ({
   formik,
   setCurrentFormIndex,
 }) => {
+  const handleReset = () => {
+    setCurrentFormIndex(0);
+  };
   return (
     <div
       style={{ boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }}
@@ -58,7 +61,7 @@ const Structure: React.FC<IProps> = ({
         {currentFormIndex === 4 ? (
           <Button
             className="flex items-center justify-center gap-2 bg-orangish "
-            onClick={() => setCurrentFormIndex(0)}
+            onClick={handleReset}
           >
             <span>Reset Form </span>
             <span>
@@ -68,7 +71,7 @@ const Structure: React.FC<IProps> = ({
           </Button>
         ) : currentFormIndex === 3 ? (
           <Button
-            className="flex items-center justify-center gap-2 bg-orangish "
+            className="flex items-center justify-center gap-2 bg-greenish "
             onClick={() => formik.handleSubmit()}
           >
             <span>Submit </span>

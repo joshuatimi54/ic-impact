@@ -1,6 +1,9 @@
 import Texts from '../Texts';
 import listElipse from '@/assets/listEllipse.png';
 import mixedPicture from '@/assets/mixedPicture.png';
+import { useInView } from 'react-intersection-observer';
+import FadeInText from '../animation/FadeInText';
+import { motion } from 'framer-motion';
 
 const Benefit = () => {
   const List = [
@@ -28,14 +31,35 @@ const Benefit = () => {
         'Monthly rewards and incentives are available for those who actively engage and perform well.',
     },
   ];
+
+  const [ref, inView] = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
+
   return (
     <div className="min-h-[80vh] max-[980px]:min-h-[100vh] flex flex-col items-center justify-center gap-[60px]">
       <div className="flex max-[1060px]:flex-col items-start max-[950px]:items-center justify-between min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto max-[950px]:my-[0px] gap-[40px]">
-        <div className="flex flex-col items-start gap-[30px] w-full">
+        <div ref={ref} className="flex flex-col items-start gap-[30px] w-full">
           <h2 className="scroll-m-20 font-rozanovaBold font-bold tracking-tight text-black text-[40px] max-[950px]:text-[32px] max-[600px]:text-[28px] leading-[50px] max-[1060px]:mt-[50px]">
-            The Benefit of Each Community{' '}
+            <FadeInText delay={0.2} inView={inView}>
+              The Benefit of Each Community{' '}
+            </FadeInText>
           </h2>
-          <img
+          <motion.img
+            initial={{
+              clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)',
+            }}
+            animate={{
+              clipPath: inView
+                ? 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'
+                : 'polygon(0 0, 100% 0, 100% 0, 0 0)',
+            }}
+            exit={{
+              opacity: 0,
+              clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+            }}
+            transition={{ delay: 0.6, duration: 1.2, ease: 'easeOut' }}
             className="min-w-[500px] max-[600px]:min-w-[250px] w-full "
             src={mixedPicture}
             alt="img"

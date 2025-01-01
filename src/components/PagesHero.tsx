@@ -8,6 +8,8 @@ import blackLady from '@/assets/blackLady.png';
 import fineWoman from '@/assets/fineWoman.png';
 import blackMan from '@/assets/blackMan.png';
 import modelWoman from '@/assets/modelWoamn.png';
+import FadeIn from './animation/FadeIn';
+import { useInView } from 'react-intersection-observer';
 
 type IProps = {
   bgImage?: string;
@@ -40,6 +42,11 @@ const PagesHero: React.FC<IProps> = ({
   showAboutHeroImg,
   showCommunityHeroImg = false,
 }) => {
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
   return (
     <div
       style={{
@@ -50,7 +57,10 @@ const PagesHero: React.FC<IProps> = ({
       }}
       className={`relative flex flex-col items-center justify-center ${mainConStyle}`}
     >
-      <div className={`relative z-[2] flex flex-col justify-center items-center`}>
+      <div
+        ref={ref}
+        className={`relative z-[2] flex flex-col justify-center items-center`}
+      >
         {bodyImg && (
           <div className={bodyImgStyle}>
             <img src={bodyImg} alt="img" />
@@ -65,29 +75,54 @@ const PagesHero: React.FC<IProps> = ({
           </Texts>
         )}
         {showCommunityHeroImg && (
-          <div className="absolute z-[4] left-[100px] top-[-60px] w-[45px] border-2 border-orangish rounded-full">
+          <FadeIn
+            inView={inView}
+            delay={0.2}
+            up={true}
+            className="absolute z-[4] left-[100px] top-[-60px] w-[45px] border-2 border-orangish rounded-full"
+          >
             <img src={blackMan} alt="img" />
-          </div>
+          </FadeIn>
         )}
         {showCommunityHeroImg && (
-          <div className="absolute z-[4] left-[-150px] max-[900px]:left-[-80px] max-[750px]:left-[0] max-[480px]:left-[-30px] top-1/3 max-[750px]:top-[5%] w-[45px] border-2 border-greenish rounded-full">
+          <FadeIn
+            inView={inView}
+            up={true}
+            delay={0.5}
+            className="absolute z-[4] left-[-150px] max-[900px]:left-[-80px] max-[750px]:left-[0] max-[480px]:left-[-30px] top-1/3 max-[750px]:top-[5%] w-[45px] border-2 border-greenish rounded-full"
+          >
             <img src={blackLady} alt="img" />
-          </div>
+          </FadeIn>
         )}
         {showCommunityHeroImg && (
-          <div className="absolute z-[4] right-[-150px] max-[900px]:right-[-80px] max-[750px]:right-[0] max-[480px]:right-[-30px] top-[-10px] w-[45px] border-2 border-yellowish rounded-full">
+          <FadeIn
+            up={true}
+            inView={inView}
+            delay={0.8}
+            className="absolute z-[4] right-[-150px] max-[900px]:right-[-80px] max-[750px]:right-[0] max-[480px]:right-[-30px] top-[-10px] w-[45px] border-2 border-yellowish rounded-full"
+          >
             <img src={CommunitySmilingGuy} alt="img" />
-          </div>
+          </FadeIn>
         )}
         {showCommunityHeroImg && (
-          <div className="absolute z-[4] left-[60px] bottom-[-100px] max-[750px]:bottom-[-80px] w-[45px] border-2 border-redish rounded-full">
+          <FadeIn
+            inView={inView}
+            up={true}
+            delay={1.1}
+            className="absolute z-[4] left-[60px] bottom-[-100px] max-[750px]:bottom-[-80px] w-[45px] border-2 border-redish rounded-full"
+          >
             <img src={modelWoman} alt="img" />
-          </div>
+          </FadeIn>
         )}
         {showCommunityHeroImg && (
-          <div className="absolute z-[4] min-[1200px]:right-[-250px] max-[1200px]:right-[-150px] max-[900px]:right-[-80px] max-[750px]:right-[0] bottom-[-100px] max-[750px]:bottom-[-80px] w-[45px] border border-orangish rounded-full">
+          <FadeIn
+            inView={inView}
+            up={true}
+            delay={1.4}
+            className="absolute z-[4] min-[1200px]:right-[-250px] max-[1200px]:right-[-150px] max-[900px]:right-[-80px] max-[750px]:right-[0] bottom-[-100px] max-[750px]:bottom-[-80px] w-[45px] border border-orangish rounded-full"
+          >
             <img src={fineWoman} alt="img" />
-          </div>
+          </FadeIn>
         )}
         {subText && <Texts className={`text-center ${subConStyle}`}>{subText}</Texts>}
         {btnTxt && <ButtonItem className="mt-4">{btnTxt}</ButtonItem>}

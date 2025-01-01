@@ -13,7 +13,7 @@ const Structure: React.FC<IProps> = ({ children, inView, active = false }) => {
       initial={{ opacity: active && !inView ? 0 : active === true && !inView ? 0 : 1 }}
       animate={{ opacity: active && inView ? 1 : active === true && !inView ? 0 : 1 }}
       exit={{ opacity: active && !inView ? 0 : !active && !inView ? 1 : 1 }}
-      className="bg-greyish min-[500px] max-w-[650px]"
+      className="bg-white w-[100%] rounded-[10px]"
     >
       {children}
     </motion.div>
