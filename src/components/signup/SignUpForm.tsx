@@ -89,7 +89,7 @@ const SignUpForm: React.FC = () => {
       try {
         const response = await axios({
           method: 'POST',
-          url: 'https://hook.eu1.make.com/obzatwbbuee5axhvsro2qoo618km1qra',
+          url: 'https://hook.eu2.make.com/8g7ysurvpztumhgbotmkz3yf185hu3ov',
           data: JSON.stringify(values),
         });
 
