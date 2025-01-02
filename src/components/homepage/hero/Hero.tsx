@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
               in the lives of young believers{' '}
             </Texts>
             <ButtonItem variant="primary" className="max-[970px]:mx-auto">
-              <Link to="/community">Join the Circle Now!</Link>{' '}
+              <Link to="/signup">Join the Circle Now!</Link>{' '}
             </ButtonItem>
             <div>
               <Texts variant="secondary" className="max-[970px]:text-center">
