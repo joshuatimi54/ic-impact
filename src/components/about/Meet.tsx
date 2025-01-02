@@ -1,5 +1,5 @@
 import Texts from '@/components/Texts';
-import { FaFacebook, FaInstagram, FaTiktok, FaTiktok } from 'react-icons/fa6';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa6';
 import { MdOutlineWhatsapp } from 'react-icons/md';
 import shepherd from '@/assets/shepherd.webp';
 import { useInView } from 'react-intersection-observer';
