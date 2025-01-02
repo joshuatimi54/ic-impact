@@ -39,6 +39,10 @@ const Navbar: React.FC = () => {
 
   const router = useLocation();
 
+UseEffect(() => {
+setIsOpened(false)
+},[router.pathname])
+
   return (
     <nav>
       <div className="bg-white fixed top-0 inset-x-0 z-[99] w-full">
