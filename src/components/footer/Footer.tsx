@@ -152,7 +152,7 @@ const Footer = () => {
               </li>
               <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
                 <a
-                  href="https://www.linkedin.com/in/peeteedesigns?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  href="https://www.linkedin.com/company/ic-impact-community/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
