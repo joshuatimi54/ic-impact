@@ -60,7 +60,7 @@ const Meet = () => {
                 className="p-2 bg-[#E4E4E4] text-black rounded-md"
               >
                 <a
-                  href="https://bit.ly/icimpactcommunity"
+                  href="https://wa.link/bagbud"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -80,7 +80,7 @@ const Meet = () => {
                 className="p-2 bg-[#E4E4E4] text-black rounded-md"
               >
                 <a
-                  href="https://www.facebook.com/ic.impactcommunity?mibextid=ZbWKwL"
+                  href="https://www.facebook.com/peculiar.jeph"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -100,7 +100,7 @@ const Meet = () => {
                 className="p-2 bg-[#E4E4E4] text-black rounded-md"
               >
                 <a
-                  href="https://www.instagram.com/ic_impactcommunity/profilecard/?igsh=MXE5N3NoNWJqZTgzNg=="
+                  href="https://www.instagram.com/peculiar.jeph"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
