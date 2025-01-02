@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
 
   const router = useLocation();
 
-UseEffect(() => {
+useEffect(() => {
 setIsOpened(false)
 },[router.pathname])
 
