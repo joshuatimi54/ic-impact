@@ -91,7 +91,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-2">
               <li className=" flex items-center gap-[7px]">
                 <span className="pt-1">{<Mail size={16} />} </span>
-                <a href="mailto:Support@ic-impact.com" rel="noopener noreferrer">
+                <a href="mailto:support@icimpact.online" rel="noopener noreferrer">
                   support@icimpact.online{' '}
                 </a>
               </li>
@@ -115,8 +115,7 @@ const Footer = () => {
             </h2>
             <ul className="flex items-start gap-4">
               <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
-                <a
-                  href="https://wa.link/bagbud"
+                <a href="https://bit.ly/icimpactcommunity"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -125,7 +124,7 @@ const Footer = () => {
               </li>
               <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
                 <a
-                  href="//www.facebook.com/peculiar.jeph"
+                  href="https://www.facebook.com/ic.impactcommunity?mibextid=ZbWKwL"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -134,7 +133,7 @@ const Footer = () => {
               </li>
               <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
                 <a
-                  href="//www.instagram.com/peculiar.jeph"
+                  href="https://www.instagram.com/ic_impactcommunity/profilecard/?igsh=MXE5N3NoNWJqZTgzNg=="
                   target="_blank"
                   rel="noopener noreferrer"
                 >
