@@ -66,7 +66,7 @@ const BlogCard: React.FC = () => {
         'https://plus.unsplash.com/premium_photo-1663100722417-6e36673fe0ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       slug: 'introduction-to-typescript',
       publishDate: '2024-02-10',
-      postAction: 'Added a new post',
+      postAction: 'Added post',
       estimatedTimeToRead: '7 min read',
       authorName: 'Sarah White',
       authorPicture:
@@ -82,7 +82,7 @@ const BlogCard: React.FC = () => {
         'https://images.unsplash.com/photo-1560732488-6b0df240254a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       slug: 'building-a-rest-api-with-node-js',
       publishDate: '2024-04-15',
-      postAction: 'Added a new post',
+      postAction: 'Added post',
       authorName: 'Reddington Greenland',
       estimatedTimeToRead: '12 min read',
       authorPicture:
@@ -98,7 +98,7 @@ const BlogCard: React.FC = () => {
         'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       slug: 'css-grid-layout-complete-guide',
       publishDate: '2024-03-20',
-      postAction: 'Posted An Update',
+      postAction: 'Posted Update',
       authorName: 'Victor Roque',
       estimatedTimeToRead: '15 min read',
       authorPicture:
@@ -116,7 +116,7 @@ const BlogCard: React.FC = () => {
       publishDate: '2024-06-10',
       authorName: 'Elizabeth Vermonth',
       estimatedTimeToRead: '8 min read',
-      postAction: 'Added a new post',
+      postAction: 'Added post',
 
       authorPicture:
         'https://i.pinimg.com/564x/33/f4/d8/33f4d8c6de4d69b21652512cbc30bb05.jpg',
@@ -126,7 +126,7 @@ const BlogCard: React.FC = () => {
 
   return (
     <div className="flex flex-col gap-y-[40px]">
-      <div className="flex flex-col items-center max-[950px]:items-center justify-center min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto max-[950px]:my-[0px] gap-[40px] my-[80px]">
+      <div className="flex flex-col items-center max-[950px]:items-center justify-center min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] max-[450px]:w-[100%] mx-auto max-[950px]:my-[0px] gap-[40px] my-[80px]">
         <div className="flex flex-col gap-[40px] w-[95%] mx-auto">
           {posts.map((post) => (
             <div key={post.id}>

@@ -58,9 +58,13 @@ const SignUpForm: React.FC = () => {
         .required('Describe your relationship with God')
         .nullable(),
       rate: Yup.string().required('Rate your relationship with God').nullable(),
-      challenge: Yup.string().required('Tell us the challenge').nullable(),
+      challenge: Yup.string()
+        .required('Tell us the challenge')
+        .min(10, 'Value should be a minimum of 10 characters')
+        .nullable(),
       goals: Yup.string()
         .required('Tell us your spiritual goals for this community')
+        .min(10, 'Value should be a minimum of 10 characters')
         .nullable(),
       motivation: Yup.string()
         .required('Tell us your motivation to join for this community')

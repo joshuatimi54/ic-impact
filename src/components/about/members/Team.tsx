@@ -2,7 +2,7 @@ import TeamMember from './TeamMember';
 import Josh from '@/assets/Joshua.webp';
 import Goodness from '@/assets/Goodness.webp';
 import Chidi from '@/assets/Chidi.webp';
-import Joy from '@/assets/Joy.webp';
+// import Joy from '@/assets/Joy.webp';
 import FadeIn from '@/components/animation/FadeIn';
 import { useInView } from 'react-intersection-observer';
 
@@ -15,6 +15,7 @@ const Team = () => {
   return (
     <div>
       <div
+        id="meetTeam"
         ref={refOne}
         className="min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto flex max-[1100px]:flex-wrap min-[580px]:items-start max-[580px]:items-center justify-between gap-y-[30px] gap-x-[20px] max-[850px]:my-[50px]"
       >
@@ -48,7 +49,7 @@ const Team = () => {
             memberPosition="Community Manager"
           />
         </FadeIn>
-        <FadeIn
+        {/* <FadeIn
           className="mx-auto"
           inView={inView}
           up
@@ -62,7 +63,7 @@ const Team = () => {
             memberName="Adewusi Goodness"
             memberPosition="Community Brand Strategist"
           />
-        </FadeIn>
+        </FadeIn> */}
         <FadeIn
           className="mx-auto"
           inView={inView}

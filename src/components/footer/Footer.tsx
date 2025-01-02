@@ -1,31 +1,31 @@
 import logo from '@/assets/logo.webp';
 import Texts from '../Texts';
-import { Mail, Phone } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Mail } from 'lucide-react';
 import { MdOutlineWhatsapp } from 'react-icons/md';
-import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa6';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa6';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Footer = () => {
   const community = [
     {
       id: 1,
       title: 'Vision',
-      path: '/community',
+      path: '/about#vision',
     },
     {
       id: 2,
       title: 'Mission',
-      path: '/community',
+      path: '/about#vision',
     },
     {
       id: 3,
       title: 'Circle of Impact',
-      path: '/community',
+      path: '/community#circle',
     },
     {
       id: 4,
       title: 'Inner-Circle of Impact',
-      path: '/community',
+      path: '/community#inner',
     },
   ];
 
@@ -92,12 +92,8 @@ const Footer = () => {
               <li className=" flex items-center gap-[7px]">
                 <span className="pt-1">{<Mail size={16} />} </span>
                 <a href="mailto:Support@ic-impact.com" rel="noopener noreferrer">
-                  support@ic-impact.com{' '}
+                  support@icimpact.online{' '}
                 </a>
-              </li>
-              <li className=" flex items-center gap-[7px]">
-                <span className="">{<Phone size={16} />} </span>
-                <span>+234 1234 6789 </span>{' '}
               </li>
             </ul>
           </div>
@@ -120,7 +116,7 @@ const Footer = () => {
             <ul className="flex items-start gap-4">
               <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
                 <a
-                  href="https://bit.ly/icimpactcommunity"
+                  href="https://wa.link/bagbud"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -129,7 +125,7 @@ const Footer = () => {
               </li>
               <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
                 <a
-                  href="https://www.facebook.com/ic.impactcommunity?mibextid=ZbWKwL"
+                  href="//www.facebook.com/peculiar.jeph"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -138,7 +134,7 @@ const Footer = () => {
               </li>
               <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
                 <a
-                  href="https://www.instagram.com/ic_impactcommunity/profilecard/?igsh=MXE5N3NoNWJqZTgzNg=="
+                  href="//www.instagram.com/peculiar.jeph"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -153,6 +149,16 @@ const Footer = () => {
                 >
                   {' '}
                   {<FaTiktok />}{' '}
+                </a>
+              </li>
+              <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
+                <a
+                  href="https://www.linkedin.com/in/peeteedesigns?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {' '}
+                  {<FaLinkedin />}{' '}
                 </a>
               </li>
             </ul>

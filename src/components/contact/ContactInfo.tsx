@@ -9,17 +9,17 @@ const ContactInfo = () => {
         <div className="flex flex-col max-[900px]:mx-auto gap-4 max-w-[350px]">
           <Texts> Location/Address: Find us at No 4 FUTA South Gate Junction...</Texts>
           <Texts>
-            <strong>For more direct or urgent communication</strong>, contact the phone
-            number and/or email address below:
+            <strong>For more direct or urgent communication</strong>, contact the email
+            address below:
           </Texts>
           <Texts>
-            <span>
+            {/* <span>
               <strong>Call us at: +234 123 456 7890</strong>{' '}
-            </span>
+            </span> */}
             <span>
-              or email us at:{' '}
+              email us at:{' '}
               <a href="mailto:support@ic-impact@gmail.com" rel="noopener noreferrer">
-                <strong>support@ic-impact@gmail.com</strong>{' '}
+                <strong>support@icimpact@gmail.online</strong>{' '}
               </a>{' '}
             </span>
           </Texts>

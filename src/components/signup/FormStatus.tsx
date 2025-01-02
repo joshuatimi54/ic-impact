@@ -19,9 +19,13 @@ const FormStatus: React.FC<FormStatusProps> = ({ motionDirection }) => {
     >
       <div className="flex flex-col items-center gap-[40px]">
         <Texts className="flex items-center gap-2 text-green-500 text-[20px]">
-          <span>Your Message has sent successfully</span>
+          <span>
+            Your Application to join the IC-IMPACT COMMUNITY, has been received, kindly
+            check your Email for further Instructions.
+          </span>
           <span>{<Check />} </span>
         </Texts>
+        <Texts>See you in the Circle</Texts>
       </div>
     </motion.div>
   );

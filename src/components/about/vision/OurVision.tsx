@@ -11,6 +11,7 @@ const OurVision = () => {
 
   return (
     <div
+      id="vision"
       ref={refOne}
       className="min-h-[80vh] bg-greyish flex flex-col items-center justify-center"
     >

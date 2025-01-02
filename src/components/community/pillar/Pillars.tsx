@@ -10,7 +10,10 @@ const Pillars = () => {
   });
 
   return (
-    <div className="min-h-[90vh] bg-greyish flex flex-col items-center justify-center gap-[60px]">
+    <div
+      id="inner"
+      className="min-h-[90vh] bg-greyish flex flex-col items-center justify-center gap-[60px]"
+    >
       <h2 className="scroll-m-20 font-rozanovaBold text-center font-bold tracking-tight text-black text-[40px] max-[950px]:text-[32px] max-[600px]:text-[28px] mt-[30px] max-[950px]:mt-[50px] pt-3 leading-[40px] max-[950px]:leading-[20px]">
         The Pillars of IC-IMPACT{' '}
       </h2>

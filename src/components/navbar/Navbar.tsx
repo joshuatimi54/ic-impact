@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
                 variant="primary"
                 className="px-[20px] py-1 flex max-[900px]:hidden"
               >
-                Sign up
+                Join the Circle Now
               </ButtonItem>
             </Link>
             {isOpened ? (

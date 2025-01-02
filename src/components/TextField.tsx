@@ -56,7 +56,9 @@ const TextField: React.FC<TextFieldProps> = ({
   return (
     <div className={`relative ${style} `}>
       {label && (
-        <label className={`${labelStyle} font-medium font-inter text-sm text-[#000000]`}>
+        <label
+          className={`${labelStyle} font-sourceSansBold font-medium font-inter text-sm text-[#000000]`}
+        >
           <span>{label} </span>
           {requiredIndicator && <span className="text-[red] font-inter">* </span>}
         </label>
@@ -71,8 +73,8 @@ const TextField: React.FC<TextFieldProps> = ({
         <div className="relative">
           <Input
             className={clsx({
-              'form-input py-[20px] px-3 bg-gray-50 text-sm font-inter font-normal placeholder:text-white-dark rounded-[10px] mt-1 border border-[#0000001A]': true,
-              'bg-red-50 border border-red-500 text-red-900 placeholder:text-red-700 text-sm rounded-lg focus:ring-red-500 focus:border-red-500': error,
+              'form-input font-sans py-[20px] px-3 bg-gray-50 text-sm placeholder:font-sourceSans font-normal placeholder:text-white-dark rounded-[10px] mt-1 border border-[#0000001A]': true,
+              'bg-red-50 font-sourceSansBold placeholder:font-sourceSans border border-red-500 text-red-900 placeholder:text-red-700 text-sm rounded-lg focus:ring-red-500 focus:border-red-500': error,
               [className]: className,
             })}
             placeholder={placeholder}
@@ -110,7 +112,9 @@ const TextField: React.FC<TextFieldProps> = ({
             </div>
           )}
         </div>
-        {error && <p className="mt-2 text-xs text-red-600 capitalize">{error}</p>}
+        {error && (
+          <p className="mt-2 text-xs text-red-600 font-sourceSans capitalize">{error}</p>
+        )}
         {indicator === 'Strong' ? (
           <p className="mt-2 text-xs text-green-600 capitalize font-medium">
             Excellent! {indicator} password{' '}

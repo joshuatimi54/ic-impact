@@ -3,6 +3,7 @@ import groupSelfie from '@/assets/groupSelfie.webp';
 import ButtonItem from '@/components/button/Button';
 import { useInView } from 'react-intersection-observer';
 import FadeIn from '../animation/FadeIn';
+import { Link } from 'react-router-dom';
 
 const FindYourPurpose = () => {
   const [refOne, inView] = useInView({
@@ -40,7 +41,7 @@ const FindYourPurpose = () => {
               communities.
             </Texts>
             <ButtonItem className="mt-4 max-[950px]:mx-auto">
-              Discover Your Purpose Today!{' '}
+              <Link to="/signup">Discover Your Purpose Today!</Link>{' '}
             </ButtonItem>
           </div>
         </FadeIn>

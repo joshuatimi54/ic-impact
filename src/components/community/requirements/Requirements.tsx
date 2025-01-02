@@ -53,6 +53,7 @@ const Requirements: React.FC = () => {
   return (
     <div className="min-h-[100vh] max-[980px]:min-h-[100vh] flex flex-col items-center justify-center gap-[60px]">
       <div
+        id="inner"
         ref={ref}
         className="flex flex-col items-center min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto max-[950px]:my-[0px] gap-[20px] max-[950px]:gap-[40px]"
       >

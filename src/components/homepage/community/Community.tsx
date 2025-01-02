@@ -17,7 +17,7 @@ const Community: React.FC = () => {
         <h2 className="text-[35px] max-[600px]:text-[24px] font-rozanovaThin font-extrabold">
           <BlurText inview={inViewOne}>IC-IMPACT Community </BlurText>
         </h2>
-        <p className="font-sourceSansItalic text-[18px]">As far as your eye can see </p>
+        <p className="font-sourceSansItalic text-[18px]">...as far as you can see </p>
       </div>
       <div className="flex max-[1100px]:flex-col items-start max-[1100px]:items-center max-[1100px]:my-[60px] justify-between gap-[20px] max-[1100px]:gap-[30px] min-[1100px]:mt-[30px] max-[1100px]:mt-[20px]">
         <Structure

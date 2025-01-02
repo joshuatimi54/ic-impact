@@ -1,7 +1,7 @@
 import Texts from '../Texts';
 import ButtonItem from '../button/Button';
 import Josh from '@/assets/josh.webp';
-import manager from '@/assets/manager.webp';
+// import manager from '@/assets/manager.webp';
 import Shepherd from '@/assets/Jeph.webp';
 import gooder from '@/assets/gooder.png';
 import ShepherdStar from '@/assets/shepherdStar.webp';
@@ -9,7 +9,7 @@ import strategist from '@/assets/strategist.webp';
 import Ellipse from '@/assets/Ellipse.webp';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const TeamMembers = () => {
   const [refOne, inViewOne] = useInView({
@@ -47,7 +47,7 @@ const TeamMembers = () => {
                 </Texts>
               </section>
               <ButtonItem className="w-[150px] max-[850px]:mx-auto">
-                <Link to="/about">Meet The Team</Link>{' '}
+                <Link to="/about#meetTeam">Meet The Team</Link>{' '}
               </ButtonItem>
             </div>
             <div className="relative max-[850px]:mx-auto">
@@ -85,7 +85,7 @@ const TeamMembers = () => {
                 </div>
               </motion.div>
 
-              <motion.div
+              {/* <motion.div
                 initial={{
                   opacity: 0,
                   y: 20,
@@ -106,7 +106,7 @@ const TeamMembers = () => {
                     Manager
                   </span>
                 </div>
-              </motion.div>
+              </motion.div> */}
 
               <motion.div
                 initial={{

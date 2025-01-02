@@ -71,7 +71,7 @@ const FormOne: React.FC<FormOneProps> = ({ formik, motionDirection }) => {
 
           <div className="flex flex-col gap-1">
             <Popover>
-              <label className="flex items-start gap-1 text-sm font-medium">
+              <label className="flex items-start gap-1 text-sm font-sourceSansBold font-medium">
                 <span>Date of birth </span>
                 <span className="text-red-500"> * </span>
               </label>
@@ -97,7 +97,7 @@ const FormOne: React.FC<FormOneProps> = ({ formik, motionDirection }) => {
                 </PopoverContent>
               </div>
             </Popover>
-            <Texts className="mt-2 flex flex-col items-start gap-[5px] text-xs text-red-600 capitalize font-medium">
+            <Texts className="mt-2 flex flex-col items-start gap-[5px] font-sourceSans text-xs text-red-600 capitalize font-medium">
               {formik.errors?.dob}{' '}
             </Texts>
           </div>
@@ -148,7 +148,7 @@ const FormOne: React.FC<FormOneProps> = ({ formik, motionDirection }) => {
               value={formik.values.eduBackground}
               onValueChange={(e: string) => formik.setFieldValue('eduBackground', e)}
             >
-              <p className="flex items-start gap-1">
+              <p className="flex items-start gap-1 font-sourceSansBold">
                 <span>Education Background</span> <span className="text-red-600">*</span>{' '}
               </p>
               <SelectTrigger className="w-full mt-1 rounded-[10px] text-gray-800 bg-inputGrey">
@@ -167,7 +167,7 @@ const FormOne: React.FC<FormOneProps> = ({ formik, motionDirection }) => {
                 </SelectGroup>
               </SelectContent>
             </Select>
-            <Texts className="mt-2 flex flex-col items-start gap-[5px] text-xs text-red-600 capitalize font-medium">
+            <Texts className="mt-2 flex flex-col items-start gap-[5px] text-xs font-sourceSans text-red-600 capitalize font-medium">
               {formik.errors?.eduBackground}{' '}
             </Texts>
           </div>
@@ -178,7 +178,7 @@ const FormOne: React.FC<FormOneProps> = ({ formik, motionDirection }) => {
               value={formik.values.employmentStatus}
               onValueChange={(e: string) => formik.setFieldValue('employmentStatus', e)}
             >
-              <p className="flex items-start gap-1 mt-4">
+              <p className="flex items-start gap-1 mt-4 font-sourceSansBold">
                 <span>Employment Status</span> <span className="text-red-600">*</span>{' '}
               </p>
               <SelectTrigger className="w-full mt-1 rounded-[10px] text-gray-700 bg-inputGrey">
@@ -194,7 +194,7 @@ const FormOne: React.FC<FormOneProps> = ({ formik, motionDirection }) => {
                 </SelectGroup>
               </SelectContent>
             </Select>
-            <Texts className="mt-2 flex flex-col items-start gap-[5px] text-xs text-red-600 capitalize font-medium">
+            <Texts className="mt-2 flex flex-col items-start gap-[5px] text-xs text-red-600 font-sourceSans capitalize font-medium">
               {formik.errors?.employmentStatus}{' '}
             </Texts>
           </div>
