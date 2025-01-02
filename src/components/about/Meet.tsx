@@ -1,5 +1,5 @@
 import Texts from '@/components/Texts';
-import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa6';
+import { FaFacebook, FaInstagram, FaTiktok, FaTiktok } from 'react-icons/fa6';
 import { MdOutlineWhatsapp } from 'react-icons/md';
 import shepherd from '@/assets/shepherd.webp';
 import { useInView } from 'react-intersection-observer';
@@ -124,6 +124,25 @@ const Meet = () => {
                   rel="noopener noreferrer"
                 >
                   {<FaTiktok />}{' '}
+                </a>
+              </motion.li>
+               <motion.li
+                initial={{ opacity: 0, y: 20 }}
+                animate={{
+                  opacity: inView ? 1 : 0,
+                  transition: {
+                    delay: 1.1,
+                    duration: 0.5,
+                  },
+                }}
+                className="p-2 bg-[#E4E4E4] text-black rounded-md"
+              >
+                <a
+                  href="https://www.linkedin.com/in/peeteedesigns?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                   {<FaLinkedin />}
                 </a>
               </motion.li>
             </ul>
