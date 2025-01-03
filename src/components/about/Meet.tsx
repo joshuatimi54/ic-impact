@@ -29,7 +29,7 @@ const Meet = () => {
             <img src={shepherd} alt="" />
           </div>
           <div className="max-w-[500px] max-[850px]:max-w-full">
-            <div className="flex flex-col items-start">
+            <div ref={refOne} className="flex flex-col items-start">
               <h3 className="scroll-m-20 text-[24px] tracking-tight first:mt-0">
                 Adewale Tomiwa Jephtha
               </h3>
@@ -37,7 +37,7 @@ const Meet = () => {
                 <strong> Community Shepherd </strong>
               </span>
             </div>
-            <section ref={refOne} className="flex flex-col gap-4 items-start mt-4">
+            <section ref={refTwo} className="flex flex-col gap-4 items-start mt-4">
               <FadeIn up={true} inView={inViewTwo}>
                 <Texts>
                   I’m Jephthah, a child of God, a minister of the Gospel, and a successful
