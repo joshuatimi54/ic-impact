@@ -4,6 +4,7 @@ export interface FormValues {
   telephone: string;
   dob: string;
   city: string;
+  gender: string;
   eduBackground: string;
   employmentStatus: string;
   relationship: string;

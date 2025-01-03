@@ -48,7 +48,7 @@ const FormTwo: React.FC<FormTwoProps> = ({ formik, motionDirection }) => {
               value={formik.values.relationship}
               onValueChange={(e: string) => formik.setFieldValue('relationship', e)}
             >
-              <p className="flex items-start gap-1">
+              <p className="flex items-start gap-1 text-lg font-sourceSansBold">
                 <span>How will you describe your current relationship with God?</span>{' '}
                 <span className="text-red-600">*</span>{' '}
               </p>
@@ -76,7 +76,7 @@ const FormTwo: React.FC<FormTwoProps> = ({ formik, motionDirection }) => {
               value={formik.values.rate}
               onValueChange={(e: string) => formik.setFieldValue('rate', e)}
             >
-              <p className="flex items-start gap-1 mt-4">
+              <p className="flex items-start gap-1 mt-4 text-lg font-sourceSansBold">
                 <span>How would you describe your current relationship with God?</span>{' '}
                 <span className="text-red-600">*</span>{' '}
               </p>

@@ -51,7 +51,7 @@ const FormOne: React.FC<FormOneProps> = ({ formik, motionDirection }) => {
       transition={{ duration: 0.5 }}
       className="bg-white"
     >
-      <h3 className="scroll-m-20 font-rozanovaBold font-bold tracking-tight text-black text-[30px] text-center max-[950px]:text-[32px] max-[600px]:text-[28px] leading-[50px] mx-auto w-full mt-[30px]">
+      <h3 className="scroll-m-20 font-rozanovaBold font-bold tracking-tight text-black text-[30px] text-center max-[950px]:text-[32px] max-[600px]:text-[28px] leading-[35px] mx-auto w-full px-[10px] mb-[30px] mt-[30px]">
         Personal Information
       </h3>
       <form onSubmit={formik.handleSubmit}>
@@ -71,7 +71,7 @@ const FormOne: React.FC<FormOneProps> = ({ formik, motionDirection }) => {
 
           <div className="flex flex-col gap-1">
             <Popover>
-              <label className="flex items-start gap-1 text-sm font-sourceSansBold font-medium">
+              <label className="flex items-start gap-1 text-lg font-sourceSansBold font-medium">
                 <span>Date of birth </span>
                 <span className="text-red-500"> * </span>
               </label>
@@ -144,11 +144,36 @@ const FormOne: React.FC<FormOneProps> = ({ formik, motionDirection }) => {
 
           <div className="flex flex-col gap-1">
             <Select
+              name="gender"
+              value={formik.values.gender}
+              onValueChange={(e: string) => formik.setFieldValue('gender', e)}
+            >
+              <p className="flex items-start gap-1 text-lg font-sourceSansBold">
+                <span>Gender </span> <span className="text-red-600">*</span>{' '}
+              </p>
+              <SelectTrigger className="w-full mt-1 rounded-[10px] text-gray-800 bg-inputGrey">
+                <SelectValue placeholder="Select your gender" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectLabel>Gender</SelectLabel>
+                  <SelectItem value="Male">Male</SelectItem>
+                  <SelectItem value="Female">Female</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+            <Texts className="mt-2 flex flex-col items-start gap-[5px] text-xs font-sourceSans text-red-600 capitalize font-medium">
+              {formik.errors?.gender}{' '}
+            </Texts>
+          </div>
+
+          <div className="flex flex-col gap-1 mt-3">
+            <Select
               name="eduBackground"
               value={formik.values.eduBackground}
               onValueChange={(e: string) => formik.setFieldValue('eduBackground', e)}
             >
-              <p className="flex items-start gap-1 font-sourceSansBold">
+              <p className="flex items-start gap-1 text-lg font-sourceSansBold">
                 <span>Education Background</span> <span className="text-red-600">*</span>{' '}
               </p>
               <SelectTrigger className="w-full mt-1 rounded-[10px] text-gray-800 bg-inputGrey">
@@ -178,7 +203,7 @@ const FormOne: React.FC<FormOneProps> = ({ formik, motionDirection }) => {
               value={formik.values.employmentStatus}
               onValueChange={(e: string) => formik.setFieldValue('employmentStatus', e)}
             >
-              <p className="flex items-start gap-1 mt-4 font-sourceSansBold">
+              <p className="flex items-start gap-1 mt-3 text-lg font-sourceSansBold">
                 <span>Employment Status</span> <span className="text-red-600">*</span>{' '}
               </p>
               <SelectTrigger className="w-full mt-1 rounded-[10px] text-gray-700 bg-inputGrey">

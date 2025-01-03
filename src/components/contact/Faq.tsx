@@ -11,7 +11,7 @@ const Faq: React.FC = () => {
       id: 1,
       question: 'How is IC-IMPACT different from other mentorship programs?',
       answer:
-        'IC-IMPACT stands out by integrating spiritual guidance, skill development, and financial empowerment in a structured and faith-centered approach',
+        'IC-IMPACT combines spiritual guidance, purpose discovery, and financial empowerment in a structured and faith-centered approach.',
       isOpen: false,
     },
     {
@@ -19,26 +19,30 @@ const Faq: React.FC = () => {
       question:
         'What is the difference between the InnerCircle and the Circle of Impact??',
       answer:
-        'IC-Impact directly takes charge of all that concerns a member  while the circle of impact is the outer layer of the innercircle members',
+        'The InnerCircle is a smaller group of 20 members who receive intensive, personalized mentorship, while the Circle of Impact is a larger community of 500 members engaged in broader training and resources.',
       isOpen: false,
     },
     {
       id: 3,
       question: 'How do I join the IC-IMPACT program?',
       answer:
-        "Send us a message with all requested details and we'll respond accordingly.",
+        ' Selection for the InnerCircle is based on fairness and merit on the submitted form. To increase your chances, carefully complete the sign-up form, as we prioritize applicants who demonstrate a strong need for mentorship and growth.',
+      answerTwo:
+        'If you’re not selected for the InnerCircle, don’t worry—you’ll still be part of the larger Circle of Impact Community. By staying active and engaged, you can improve your chances for the next intake. In fact, the top 5 most active members of the Circle of Impact Community automatically qualify for the InnerCircle in the following enrollment cycle.',
       isOpen: false,
     },
     {
       id: 4,
       question: 'What is the cost of Joining either of the two communities?',
-      answer: 'The cost is $100 for the InnerCircle and $50 for the Circle of',
+      answer:
+        'Both Communities are entirely FREE, infact the Citizens of Inner Circle of Impact Community enjoy Free Financial Empowerment.',
       isOpen: false,
     },
     {
       id: 5,
       question: 'Who can Join IC-IMPACT Community?',
-      answer: 'Anybody can join either of the  two communities.',
+      answer:
+        'The community is open to individuals aged 12 to 30 who are eager to grow spiritually, develop their skills, and make an impact in their lives and society.',
       isOpen: false,
     },
   ]);
@@ -74,12 +78,15 @@ const Faq: React.FC = () => {
                         animate={{
                           opacity: 1,
                           width: '100%',
-                          maxHeight: 200,
+                          maxHeight: 300,
                         }}
                         exit={{ opacity: 0, maxHeight: 0 }}
                         transition={{ duration: 0.8 }}
                       >
                         <Texts className="w-[100%] mx-auto py-4">{faq.answer}</Texts>
+                        {faq.answerTwo && (
+                          <Texts className="w-[100%] mx-auto ">{faq.answerTwo}</Texts>
+                        )}
                       </motion.div>
                     )}
                   </AnimatePresence>

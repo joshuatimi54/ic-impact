@@ -31,7 +31,7 @@ const Team = () => {
             image={Josh}
             imageAlt={`${Josh} Image`}
             memberName="Adesoba Joshua"
-            memberPosition="Community Content Writer"
+            memberPosition="Community Partner"
           />
         </FadeIn>
         <FadeIn
@@ -46,7 +46,7 @@ const Team = () => {
             image={Goodness}
             imageAlt={`${Goodness} Image`}
             memberName="Adedokun Joy"
-            memberPosition="Community Manager"
+            memberPosition="Community Brand Strategist"
           />
         </FadeIn>
         {/* <FadeIn
@@ -76,7 +76,7 @@ const Team = () => {
             image={Chidi}
             imageAlt={`${Chidi} Image`}
             memberName="Chidi Favour Martins"
-            memberPosition="Community Content Writer"
+            memberPosition="Community Content Strategist"
           />
         </FadeIn>
       </div>

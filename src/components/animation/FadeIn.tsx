@@ -32,16 +32,15 @@ const FadeIn: React.FC<IProps> = ({
         opacity: !opacity ? '' : inView ? 1 : 0,
         y: up && inView ? 0 : up && !inView ? upValue : 0,
         transition: {
-          duration: 0.8,
+          duration: 0.7,
           delay: delay ?? 0,
-          ease: 'easeInOut',
         },
       }}
       exit={{
         y: up ? 20 : 0,
         opacity: 0,
         transition: {
-          duration: 0.8,
+          duration: 0.7,
           delay: exitDelay ?? 0,
         },
       }}

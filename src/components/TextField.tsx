@@ -43,8 +43,8 @@ const TextField: React.FC<TextFieldProps> = ({
   step,
   onWheel,
   min,
-  indicator,
-  missingCriteria,
+  // indicator,
+  // missingCriteria,
   loadingSpinner,
   requiredIndicator,
   style,
@@ -57,10 +57,10 @@ const TextField: React.FC<TextFieldProps> = ({
     <div className={`relative ${style} `}>
       {label && (
         <label
-          className={`${labelStyle} font-sourceSansBold font-medium font-inter text-sm text-[#000000]`}
+          className={`${labelStyle} font-medium font-sourceSansBold text-lg text-[#000000]`}
         >
           <span>{label} </span>
-          {requiredIndicator && <span className="text-[red] font-inter">* </span>}
+          {requiredIndicator && <span className="text-[red] font-sourceSans">* </span>}
         </label>
       )}
       <div className="relative mb-5">
@@ -70,10 +70,11 @@ const TextField: React.FC<TextFieldProps> = ({
             it?{' '}
           </span>
         )}
+
         <div className="relative">
           <Input
             className={clsx({
-              'form-input font-sans py-[20px] px-3 bg-gray-50 text-sm placeholder:font-sourceSans font-normal placeholder:text-white-dark rounded-[10px] mt-1 border border-[#0000001A]': true,
+              'form-input font-sourceSansBold placeholder:font-sourceSans py-[20px] px-3 bg-gray-50 text-sm placeholder:font-medium font-normal placeholder:text-white-dark rounded-[10px] mt-1 border border-[#0000001A]': true,
               'bg-red-50 font-sourceSansBold placeholder:font-sourceSans border border-red-500 text-red-900 placeholder:text-red-700 text-sm rounded-lg focus:ring-red-500 focus:border-red-500': error,
               [className]: className,
             })}
@@ -114,27 +115,6 @@ const TextField: React.FC<TextFieldProps> = ({
         </div>
         {error && (
           <p className="mt-2 text-xs text-red-600 font-sourceSans capitalize">{error}</p>
-        )}
-        {indicator === 'Strong' ? (
-          <p className="mt-2 text-xs text-green-600 capitalize font-medium">
-            Excellent! {indicator} password{' '}
-          </p>
-        ) : indicator === 'Medium' ? (
-          <p className="mt-2 flex flex-col items-start gap-[5px] text-xs  text-yellow-600 capitalize font-medium">
-            <span>Good! your password strength is {indicator}</span>
-            <span>{indicator && `Consider adding: ${missingCriteria} `} </span>
-          </p>
-        ) : indicator === 'Weak' ? (
-          <p className="mt-2 flex flex-col items-start gap-[5px] text-xs text-red-600 capitalize font-medium">
-            <span>Password is too {indicator}! </span>
-            {indicator && missingCriteria ? (
-              <span>{`Consider adding: ${missingCriteria} `}</span>
-            ) : (
-              ''
-            )}
-          </p>
-        ) : (
-          ''
         )}
       </div>
     </div>

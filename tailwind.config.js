@@ -15,6 +15,8 @@ export default {
 			  sourceSans: ['sourceSansRegular', 'Inter'],
 			  sourceSansItalic: ['sourceSansItalic', 'Inter'],
 			  sourceSansBold: ['sourceSansBold', 'Inter'],
+			  robotoBold: ['robotoBold', 'Inter'],
+			  robotoMedium: ['robotoMedium', 'Inter'],
 			},
 		  backgroundColor: {
 			  redish: '#C4000C',

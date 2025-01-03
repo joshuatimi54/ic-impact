@@ -80,7 +80,7 @@ const TeamMembers = () => {
                     alt="img"
                   />
                   <span className="absolute bottom-[0px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white z-[3] rounded-[15px] text-[12px] px-3">
-                    Shepherd{' '}
+                    Strategist
                   </span>
                 </div>
               </motion.div>
@@ -144,7 +144,7 @@ const TeamMembers = () => {
                     delay: 1.5,
                   },
                 }}
-                className="absolute right-[-50px] bottom-[-50px] max-[420px]:right-[-20px] z-[2]"
+                className="absolute right-[-50px] bottom-[100px] max-[420px]:right-[-20px] z-[2]"
               >
                 <div className="bg-redish relative overflow-hidden rounded-[10px] w-[120px] h-[140px]">
                   <img

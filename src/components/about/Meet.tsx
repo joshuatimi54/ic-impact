@@ -4,9 +4,15 @@ import { MdOutlineWhatsapp } from 'react-icons/md';
 import shepherd from '@/assets/shepherd.webp';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
+import FadeIn from '../animation/FadeIn';
 
 const Meet = () => {
   const [refOne, inView] = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
+
+  const [refTwo, inViewTwo] = useInView({
     threshold: 0.3,
     triggerOnce: false,
   });
@@ -32,19 +38,21 @@ const Meet = () => {
               </span>
             </div>
             <section ref={refOne} className="flex flex-col gap-4 items-start mt-4">
-              <Texts>
-                I’m Jephthah, a child of God, a minister of the Gospel, and a successful
-                Data Engineer with a deep passion for impacting young lives.{' '}
-              </Texts>
-              <Texts>
-                By God’s grace, I serve not as one who knows it all, but as someone
-                continuously guided and helped by God.
-              </Texts>
-              <Texts>
-                My purpose is to assist others in discovering and establishing their
-                God-given purpose, and I am wholeheartedly committed to serving the
-                IC-IMPACT community with humility and grace.
-              </Texts>
+              <FadeIn up={true} inView={inViewTwo}>
+                <Texts>
+                  I’m Jephthah, a child of God, a minister of the Gospel, and a successful
+                  Data Engineer with a deep passion for impacting young lives.{' '}
+                </Texts>
+                <Texts>
+                  By God’s grace, I serve not as one who knows it all, but as someone
+                  continuously guided and helped by God.
+                </Texts>
+                <Texts>
+                  My purpose is to assist others in discovering and establishing their
+                  God-given purpose, and I am wholeheartedly committed to serving the
+                  IC-IMPACT community with humility and grace.
+                </Texts>
+              </FadeIn>
             </section>
             <ul className="flex items-start gap-4 mt-[10px]">
               <motion.li
@@ -126,7 +134,7 @@ const Meet = () => {
                   {<FaTiktok />}{' '}
                 </a>
               </motion.li>
-               <motion.li
+              <motion.li
                 initial={{ opacity: 0, y: 20 }}
                 animate={{
                   opacity: inView ? 1 : 0,
@@ -142,7 +150,7 @@ const Meet = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                   {<FaLinkedin />}
+                  {<FaLinkedin />}
                 </a>
               </motion.li>
             </ul>

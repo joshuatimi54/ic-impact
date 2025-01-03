@@ -109,8 +109,7 @@
 }
   @font-face {
   font-family: 'robotoMedium';
-  src: url('/Roboto-Bold.ttf') format('truetype'),
-       url('/Roboto-Bold.ttf') format('truetype');
+  src: url('/Roboto-Medium.ttf') format('truetype');
   font-display: swap;
   font-style: normal;
 }

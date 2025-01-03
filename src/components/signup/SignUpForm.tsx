@@ -12,7 +12,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 
 const SignUpForm: React.FC = () => {
-  const [currentFormIndex, setCurrentFormIndex] = useState<number>(0);
+  const [currentFormIndex, setCurrentFormIndex] = useState<number>(4);
   const [motionDirection, setMotionDirection] = useState<number>(300);
 
   const formik = useFormik<FormValues>({
@@ -22,6 +22,7 @@ const SignUpForm: React.FC = () => {
       telephone: '',
       dob: '',
       city: '',
+      gender: '',
       eduBackground: '',
       employmentStatus: '',
       rate: '',
@@ -52,6 +53,7 @@ const SignUpForm: React.FC = () => {
         .nullable(),
       dob: Yup.string().required('Date of birth is required').nullable(),
       city: Yup.string().required('City is required').nullable(),
+      gender: Yup.string().required('Gender is required').nullable(),
       eduBackground: Yup.string().required('Education background is required').nullable(),
       employmentStatus: Yup.string().required('Employment status is required').nullable(),
       relationship: Yup.string()
@@ -69,7 +71,10 @@ const SignUpForm: React.FC = () => {
       motivation: Yup.string()
         .required('Tell us your motivation to join for this community')
         .nullable(),
-      purpose: Yup.string().required('Share your with us purpose').nullable(),
+      purpose: Yup.string()
+        .required('Share your with us purpose')
+        .min(10, 'Value should be a minimum of 10 characters')
+        .nullable(),
       improvements: Yup.string()
         .required('Tell us your areas of improvements')
         .nullable(),
@@ -98,8 +103,9 @@ const SignUpForm: React.FC = () => {
           return;
         }
 
-        toast.success('Thank you!, Your response has been sent');
+        toast.success('Thank you!, Your application has been sent');
         setCurrentFormIndex(4);
+
         formik.resetForm();
       } catch (error) {
         toast.error('Sorry!, An error occurred while sending your response');

@@ -71,6 +71,7 @@ const Structure: React.FC<IProps> = ({
           </Button>
         ) : currentFormIndex === 3 ? (
           <Button
+            type="submit"
             className="flex items-center justify-center gap-2 bg-greenish "
             onClick={() => formik.handleSubmit()}
           >
