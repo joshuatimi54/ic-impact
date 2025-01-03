@@ -64,10 +64,10 @@ const Circle = () => {
   };
 
   return (
-    <div className="min-h-[80vh] max-[980px]:min-h-[100vh] flex flex-col items-center justify-center gap-[60px]">
+    <div className="min-[1800px]:min-h-[60vh] max-[1800px]:min-h-[80vh] max-[980px]:min-h-[100vh] flex flex-col items-center justify-center gap-[60px]">
       <div
         id="circle"
-        className="flex max-[1060px]:flex-col items-start max-[950px]:items-center justify-between min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto max-[950px]:my-[0px] gap-[40px]"
+        className="flex max-[1060px]:flex-col items-start max-[950px]:items-center justify-between min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto my-[50px] max-[950px]:my-[0px] gap-[40px]"
       >
         <div className="flex flex-col items-start gap-[30px] w-full">
           <img

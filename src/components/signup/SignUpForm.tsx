@@ -12,7 +12,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 
 const SignUpForm: React.FC = () => {
-  const [currentFormIndex, setCurrentFormIndex] = useState<number>(4);
+  const [currentFormIndex, setCurrentFormIndex] = useState<number>(0);
   const [motionDirection, setMotionDirection] = useState<number>(300);
 
   const formik = useFormik<FormValues>({

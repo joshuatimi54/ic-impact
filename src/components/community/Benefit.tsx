@@ -38,8 +38,8 @@ const Benefit = () => {
   });
 
   return (
-    <div className="min-h-[80vh] max-[980px]:min-h-[100vh] flex flex-col items-center justify-center gap-[60px]">
-      <div className="flex max-[1060px]:flex-col items-start max-[950px]:items-center justify-between min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto max-[950px]:my-[0px] gap-[40px]">
+    <div className="min-[1800px]:min-h-[60vh] max-[1800px]:min-h-[80vh] max-[980px]:min-h-[100vh] flex flex-col items-center justify-center gap-[60px]">
+      <div className="flex max-[1060px]:flex-col items-start max-[950px]:items-center justify-between min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto my-[60px] max-[950px]:my-[0px] gap-[40px]">
         <div ref={ref} className="flex flex-col items-start gap-[30px] w-full">
           <h2 className="scroll-m-20 font-rozanovaBold font-bold tracking-tight text-black text-[40px] max-[950px]:text-[32px] max-[600px]:text-[28px] leading-[50px] max-[1060px]:mt-[50px]">
             <FadeInText delay={0.2} inView={inView}>

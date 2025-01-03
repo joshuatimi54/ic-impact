@@ -18,8 +18,8 @@ const TeamMembers = () => {
   });
 
   return (
-    <div className="min-[850px]:h-[80vh] max-[850px]:min-h-[70vh] max-[430px]:min-h-[100vh] pb-[90px] bg-greyish flex flex-col items-center max-[850px]:items-start justify-center max-[850px]:justify-start ">
-      <div className="min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto h-[80%]">
+    <div className="max-[850px]:min-h-[70vh] max-[430px]:min-h-[100vh] pb-[90px] bg-greyish flex flex-col items-center max-[850px]:items-start justify-center max-[850px]:justify-start ">
+      <div className="min-[1800px]:max-w-[1200px] w-full max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mt-[50px] mx-auto h-[80%]">
         <div className="flex flex-col">
           <h2 className="flex flex-col items-start gap-[3px] scroll-m-20 font-rozanovaBold font-bold tracking-tight text-[30px] max-[850px]:mt-[40px] max-[850px]:mb-3">
             {' '}

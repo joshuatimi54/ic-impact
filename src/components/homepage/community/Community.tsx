@@ -18,8 +18,8 @@ const Community: React.FC = () => {
   });
 
   return (
-    <div className="min-h-screen min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto mb-[50px]">
-      <div ref={refOne}>
+    <div className=" min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto max-[600px]:pb-[10px] mb-[50px]">
+      <div className="mt-[60px]" ref={refOne}>
         <h2 className="text-[35px] max-[600px]:text-[24px] font-rozanovaThin font-extrabold">
           <BlurText inview={inViewOne}>IC-IMPACT Community </BlurText>
         </h2>

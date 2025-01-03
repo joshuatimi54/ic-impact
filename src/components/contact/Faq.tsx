@@ -48,7 +48,7 @@ const Faq: React.FC = () => {
   ]);
 
   return (
-    <div className="min-h-[90vh] flex flex-col items-center justify-center bg-greyish">
+    <div className="min-[1800px]:min-h-[60vh] max-[1800px]:min-h-[80vh] flex flex-col items-center justify-center bg-greyish">
       <div>
         <div>
           <h2 className="scroll-m-20 text-[35px] text-center font-semibold tracking-tight first:mt-0">
@@ -56,7 +56,7 @@ const Faq: React.FC = () => {
             FAQs
           </h2>
         </div>
-        <div className="!bg-white max-w-[550px] min-[680px]:w-[550px] max-[680px]:w-[90%] mx-auto flex flex-col items-center justify-center mt-[20px] pt-[40px] pb-[60px] rounded-[20px]">
+        <div className="bg-white mb-[50px] max-w-[550px] min-[680px]:w-[550px] max-[680px]:w-[90%] mx-auto flex flex-col items-center justify-center mt-[20px] pt-[40px] pb-[60px] rounded-[20px]">
           <ul className="flex flex-col items-start justify-center w-full gap-2">
             {faqs.map((faq, index: number) => (
               <li className="w-full" key={faq.id}>

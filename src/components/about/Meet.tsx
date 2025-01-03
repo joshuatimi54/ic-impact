@@ -18,9 +18,9 @@ const Meet = () => {
   });
 
   return (
-    <div className="min-h-[100vh] flex flex-col items-center justify-center ">
-      <div className="min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto ">
-        <h2 className="flex flex-col items-start font-rozanovaBold scroll-m-20 text-[35px] max-[900px]:text-[30px] max-[480px]:text-[24px] tracking-tight mb-4 max-[850px]:mt-[40px] ">
+    <div className="min-[1800px]:min-h-[60vh] max-[1800px]:min-h-[80vh] flex flex-col items-center justify-center ">
+      <div className="min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] min-[1800px]:w-[55%] my-[40px] mx-auto ">
+        <h2 className="flex flex-col items-start font-rozanovaBold scroll-m-20 text-[35px] max-[900px]:text-[30px] max-[480px]:text-[24px] tracking-tight mb-4 mt-[40px]">
           <span>Meet the Community</span>
           <span>Team Members</span>
         </h2>

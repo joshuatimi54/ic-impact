@@ -54,7 +54,7 @@ const Citizen = () => {
   };
 
   return (
-    <div className="min-h-[90vh] bg-cyanish text-white max-[980px]:min-h-[100vh] flex flex-col items-center justify-center gap-[60px]">
+    <div className="min-[1800px]:min-h-[70vh] max-[1800px]:min-h-[100vh] bg-cyanish text-white max-[980px]:min-h-[100vh] flex flex-col items-center justify-center gap-[60px]">
       <div className="flex max-[1060px]:flex-col-reverse items-start max-[950px]:items-center justify-between min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto max-[950px]:my-[0px] gap-[40px]">
         <div ref={ref} className="flex flex-col gap-[30px] max-[1060px]:mb-[60px]">
           <h2 className="scroll-m-20 font-rozanovaBold text-white font-bold tracking-tight text-[40px] max-[950px]:text-[32px] max-[600px]:text-[28px] leading-[50px] max-[600px]:leading-[40px] max-[1060px]:mt-[10px] max-[600px]:mt-0">

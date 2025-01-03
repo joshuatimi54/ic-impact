@@ -114,15 +114,16 @@ const Footer = () => {
               Socials
             </h2>
             <ul className="flex items-start gap-4">
-              <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
-                <a href="https://bit.ly/icimpactcommunity"
+              <li className="p-2 bg-[#E4E4E4] cursor-pointer text-black rounded-md">
+                <a
+                  href="https://bit.ly/icimpactcommunity"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {<MdOutlineWhatsapp />}{' '}
                 </a>
               </li>
-              <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
+              <li className="p-2 bg-[#E4E4E4] cursor-pointer text-black rounded-md">
                 <a
                   href="https://www.facebook.com/ic.impactcommunity?mibextid=ZbWKwL"
                   target="_blank"
@@ -131,7 +132,7 @@ const Footer = () => {
                   {<FaFacebook />}{' '}
                 </a>
               </li>
-              <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
+              <li className="p-2 bg-[#E4E4E4] cursor-pointer text-black rounded-md">
                 <a
                   href="https://www.instagram.com/ic_impactcommunity/profilecard/?igsh=MXE5N3NoNWJqZTgzNg=="
                   target="_blank"
@@ -140,7 +141,7 @@ const Footer = () => {
                   {<FaInstagram />}{' '}
                 </a>
               </li>
-              <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
+              <li className="p-2 bg-[#E4E4E4] cursor-pointer text-black rounded-md">
                 <a
                   href="https://www.tiktok.com/@tomiwa_jeph?_t=8sROCozm33l&_r=1"
                   target="_blank"
@@ -150,7 +151,7 @@ const Footer = () => {
                   {<FaTiktok />}{' '}
                 </a>
               </li>
-              <li className="p-2 bg-[#E4E4E4] text-black rounded-md">
+              <li className="p-2 bg-[#E4E4E4] cursor-pointer text-black rounded-md">
                 <a
                   href="https://www.linkedin.com/company/ic-impact-community/"
                   target="_blank"

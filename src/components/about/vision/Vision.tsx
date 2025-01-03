@@ -11,7 +11,7 @@ type IProps = {
 
 const Vision: React.FC<IProps> = ({ heading, text, subText, conclude, bgColor }) => {
   return (
-    <div className="max-w-[500px] min-w-[400px] max-[500px]:min-w-[200px] ">
+    <div className="max-w-[450px] min-w-[400px] max-[500px]:min-w-[200px] ">
       <div
         className={clsx(
           `py-[15px] px-2 rounded-tl-[15px] rounded-tr-[15px]`,

@@ -17,7 +17,7 @@ const Discover = () => {
   });
 
   return (
-    <div className="min-[1100px]:h-screen max-[1110px]:min-h-screen relative z-1 flex flex-col items-center justify-center">
+    <div className="min-[1800px]:h-[70vh] min-[1100px]:h-screen max-[1110px]:min-h-screen relative z-1 flex flex-col items-center justify-center">
       <div className="min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] relative z-[1] flex max-[1100px]:flex-col items-start max-[1100px]:items-center justify-between gap-[30px] max-[1100px]:my-[60px]">
         <span className="bg-orangish absolute left-0 top-0 z-1 w-[40px] h-[40px] rounded-full"></span>
         <div className="max-w-[500px]">

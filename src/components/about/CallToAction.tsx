@@ -11,7 +11,7 @@ const CallToAction: React.FC = () => {
       style={{
         backgroundImage: `url(${dune})`,
       }}
-      className="flex flex-col items-center justify-center h-[60vh] w-full"
+      className="flex flex-col items-center justify-center min-[1800px]:h-[40vh] max-[1800px]:h-[60vh] w-full"
     >
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-[150px]">

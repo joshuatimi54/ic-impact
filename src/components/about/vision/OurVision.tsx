@@ -13,7 +13,7 @@ const OurVision = () => {
     <div
       id="vision"
       ref={refOne}
-      className="min-h-[80vh] bg-greyish flex flex-col items-center justify-center"
+      className="min-[1800px]:min-h-[60vh] max-[1800px]:min-h-[80vh] bg-greyish flex flex-col items-center justify-center"
     >
       <div className="flex max-[950px]:flex-col items-start max-[950px]:items-center justify-between min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto max-[950px]:my-[50px] gap-[20px]">
         <FadeIn inView={inView} up={true}>

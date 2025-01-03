@@ -127,7 +127,7 @@ const BlogCard: React.FC = () => {
   return (
     <div className="flex flex-col gap-y-[40px]">
       <div className="flex flex-col items-center max-[950px]:items-center justify-center min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] max-[450px]:w-[100%] mx-auto max-[950px]:my-[0px] gap-[40px] my-[80px]">
-        <div className="flex flex-col gap-[40px] w-[95%] mx-auto">
+        <div className="flex flex-col gap-[20px] w-[95%] mx-auto">
           {posts.map((post) => (
             <div key={post.id}>
               <Post post={post} />
