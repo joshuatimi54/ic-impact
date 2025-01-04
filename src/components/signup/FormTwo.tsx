@@ -129,7 +129,7 @@ const FormTwo: React.FC<FormTwoProps> = ({ formik, motionDirection }) => {
             </Texts>
           </div>
 
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 mt-2">
             <Select
               name="active"
               value={formik.values.active}
