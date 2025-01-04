@@ -178,7 +178,7 @@ const SignUpForm: React.FC = () => {
 
   return (
     <div className="min-h-[80vh] max-[980px]:min-h-[100vh] flex flex-col items-center justify-center gap-[20px]">
-      <div className="flex flex-col items-center max-[950px]:items-center justify-center min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto max-[950px]:my-[0px] gap-[40px] my-[80px]">
+      <div className=" hidden flex flex-col items-center max-[950px]:items-center justify-center min-[1800px]:max-w-[1200px] max-[1800px]:max-w-[1100px] max-[1800px]:w-[90%] mx-auto max-[950px]:my-[0px] gap-[40px] my-[80px]">
         <Structure
           formik={formik}
           previous={handlePrevious}

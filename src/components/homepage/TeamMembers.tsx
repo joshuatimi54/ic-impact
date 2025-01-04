@@ -2,7 +2,7 @@ import Texts from '../Texts';
 import ButtonItem from '../button/Button';
 import Josh from '@/assets/josh.webp';
 // import manager from '@/assets/manager.webp';
-import Shepherd from '@/assets/Jeph.webp';
+import Shepherd from '@/assets/shepherd.webp';
 import gooder from '@/assets/gooder.png';
 import ShepherdStar from '@/assets/shepherdStar.webp';
 import strategist from '@/assets/strategist.webp';

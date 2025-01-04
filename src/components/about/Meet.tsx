@@ -31,7 +31,7 @@ const Meet = () => {
           <div className="max-w-[500px] max-[850px]:max-w-full">
             <div ref={refOne} className="flex flex-col items-start">
               <h3 className="scroll-m-20 text-[24px] tracking-tight first:mt-0">
-                Adewale Tomiwa Jephtha
+                Adewale Tomiwa Jephthah
               </h3>
               <span className=" font-sourceSansBold">
                 <strong> Community Shepherd </strong>
