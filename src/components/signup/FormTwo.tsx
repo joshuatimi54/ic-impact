@@ -77,11 +77,13 @@ const FormTwo: React.FC<FormTwoProps> = ({ formik, motionDirection }) => {
               onValueChange={(e: string) => formik.setFieldValue('rate', e)}
             >
               <p className="flex items-start gap-1 mt-4 text-lg font-sourceSansBold">
-                <span>How would you describe your current relationship with God?</span>{' '}
+                <span>
+                  How will you Rate your commitment to your daily Devotional Life?
+                </span>{' '}
                 <span className="text-red-600">*</span>{' '}
               </p>
               <SelectTrigger className="w-full mt-1 rounded-[10px] text-gray-800 bg-inputGrey">
-                <SelectValue placeholder="Relationship with God" />
+                <SelectValue placeholder="Daily devotion with God" />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
@@ -124,6 +126,33 @@ const FormTwo: React.FC<FormTwoProps> = ({ formik, motionDirection }) => {
             </Select>
             <Texts className="mt-2 flex flex-col items-start gap-[5px] text-xs text-red-600 capitalize font-medium">
               {formik.errors?.rate}{' '}
+            </Texts>
+          </div>
+
+          <div className="flex flex-col gap-1 mt-2">
+            <Select
+              name="active"
+              value={formik.values.active}
+              onValueChange={(e: string) => formik.setFieldValue('active', e)}
+            >
+              <p className="flex items-start gap-1 text-lg font-sourceSansBold">
+                <span>
+                  Are You Actively Involved in Any Church or Faith-Based Organization?
+                </span>{' '}
+                <span className="text-red-600">*</span>{' '}
+              </p>
+              <SelectTrigger className="w-full mt-1 rounded-[10px] text-gray-800 bg-inputGrey">
+                <SelectValue placeholder="Yes or No" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup onBlur={formik.handleBlur}>
+                  <SelectItem value="Yes">Yes</SelectItem>
+                  <SelectItem value="No">No</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+            <Texts className="mt-2 flex flex-col items-start gap-[5px] text-xs text-red-600 capitalize font-medium">
+              {formik.errors?.active}{' '}
             </Texts>
           </div>
 

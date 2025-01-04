@@ -26,6 +26,7 @@ const SignUpForm: React.FC = () => {
       eduBackground: '',
       employmentStatus: '',
       rate: '',
+      active: '',
       challenge: '',
       goals: '',
       relationship: '',
@@ -60,6 +61,7 @@ const SignUpForm: React.FC = () => {
         .required('Describe your relationship with God')
         .nullable(),
       rate: Yup.string().required('Rate your relationship with God').nullable(),
+      active: Yup.string().required('Answer yes or no').nullable(),
       challenge: Yup.string()
         .required('Tell us the challenge')
         .min(10, 'Value should be a minimum of 10 characters')

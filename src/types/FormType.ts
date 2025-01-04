@@ -9,6 +9,7 @@ export interface FormValues {
   employmentStatus: string;
   relationship: string;
   rate: string;
+  active: string;
   challenge: string;
   goals: string;
   motivation: string;
