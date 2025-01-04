@@ -1,7 +1,7 @@
 import Texts from '@/components/Texts';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa6';
 import { MdOutlineWhatsapp } from 'react-icons/md';
-import shepherd from '@/assets/shepherd.webp';
+import Jeph from '@/assets/shepherd.webp';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import FadeIn from '../animation/FadeIn';
@@ -25,8 +25,8 @@ const Meet = () => {
           <span>Team Members</span>
         </h2>
         <div className="flex max-[850px]:flex-col items-center justify-between gap-[30px]">
-          <div className="max-w-[400px] min-w-[400px]">
-            <img src={shepherd} alt="" />
+          <div className="max-w-[400px] min-w-[400px]" >
+            <img className='rounded-[10px]' src={Jeph} alt="Shepard" />
           </div>
           <div className="max-w-[500px] max-[850px]:max-w-full">
             <div ref={refOne} className="flex flex-col items-start">
