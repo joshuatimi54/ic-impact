@@ -13,7 +13,7 @@ const Joinwaitlist = () => {
       
 
     return (
-        <div className="m-auto p-12 rounded-xl container border-2 w-fit min-[1800px]:h-[10vh] min-[1100px]:h-screen max-[1110px]:min-h-screen relative z-1 flex flex-col items-center justify-center">
+        <div className="m-auto p-12 rounded-xl border-2 w-fit relative z-1 flex flex-col items-center justify-center">
             <div 
                 ref={refOne}
                 className="flex"
