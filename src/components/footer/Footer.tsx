@@ -63,7 +63,7 @@ const Footer = () => {
           <div className="flex flex-col items-start gap-4">
             <div className="w-[100px]">
               <Link to="/">
-                <img src={logo} alt="img" />
+                <img className='max-[1800px]:max-w-[200px] bg-white' src={logo} alt="img" />
               </Link>
             </div>
             <Texts className="max-w-[300px]">
