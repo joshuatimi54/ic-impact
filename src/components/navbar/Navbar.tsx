@@ -50,7 +50,7 @@ setIsOpened(false)
           <div className="flex items-center justify-between gap-4 py-3">
             <div>
               <Link to="/">
-                <img src={Logo} alt="img" />
+                <img className='max-[1800px]:max-w-[250px]' src={Logo} alt="img" />
               </Link>
             </div>
             <ul className="flex items-center justify-between gap-[30px] font-rozanovaBold max-[900px]:hidden">
