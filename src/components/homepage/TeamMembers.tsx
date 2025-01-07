@@ -55,6 +55,7 @@ const TeamMembers = () => {
                 <img
                   src={Shepherd}
                   className="bg-greenish w-[200px] h-[200px] object-cover rounded-full"
+                  alt="shepherd"
                 />
               </div>
               <motion.div

@@ -97,6 +97,9 @@ const SignUpForm: React.FC = () => {
         const response = await axios({
           method: 'POST',
           url: 'https://hook.eu2.make.com/8g7ysurvpztumhgbotmkz3yf185hu3ov',
+          headers: {
+            'Content-Type': 'application/json',
+          },
           data: JSON.stringify(values),
         });
 
