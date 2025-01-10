@@ -6,10 +6,9 @@ import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import { Textarea } from '../ui/textarea';
 import Texts from '../Texts';
-import { FormValues } from '@/types/FormType';
+// import { FormValues } from '@/types/FormType';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import { redirect } from 'react-router-dom';
 
 const ContactForm: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
