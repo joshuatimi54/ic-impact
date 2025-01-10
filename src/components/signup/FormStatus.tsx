@@ -23,11 +23,6 @@ const FormStatus: React.FC<FormStatusProps> = ({ motionDirection }) => {
             check your Email for further Instructions.
           </span>
         </Texts>
-        <a href="https://tinyurl.com/ICI-website-leads">
-          Click on this{' '}
-          <span className="text-cyanish">https://tinyurl.com/ICI-website-leads</span> to
-          join our whatsapp group.{' '}
-        </a>
         <Texts>See you in the Circle!</Texts>
       </div>
     </motion.div>

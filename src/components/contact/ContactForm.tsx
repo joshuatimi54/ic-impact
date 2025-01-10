@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import { Input } from '../ui/input';
+// import { Button } from '../ui/button';
 import ButtonItem from '../button/Button';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import { Textarea } from '../ui/textarea';
 import Texts from '../Texts';
+import { FormValues } from '@/types/FormType';
+import axios from 'axios';
+import { toast } from 'react-toastify';
+import { redirect } from 'react-router-dom';
 
 const ContactForm: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
@@ -24,11 +29,38 @@ const ContactForm: React.FC = () => {
       telephone: Yup.string().required('Telephone is required').nullable(),
       message: Yup.string().required('Message is required').nullable(),
     }),
-    onSubmit: (values, { setFieldTouched }) => {
+    onSubmit: async (values, { setFieldTouched }) => {
       setIsSubmitting(true);
       for (const key in values) {
-        setFieldTouched(key, true);
+       setFieldTouched(key, true);
+      };
+      try {
+        const response = await axios({
+          method: 'POST',
+          url: 'https://hook.eu2.make.com/z6o7i2pb0v4qbe8lek8sxoyzmjgsr4v2',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          data: JSON.stringify(values),
+        });
+
+        if (!response.data) {
+          toast.error('Sorry!, Failed to submit your response');
+          return;
+        }
+
+        toast.success('Your message has been sent, we will get back to you soon');
+        
+        // Set a 3-second delay before refreshing
+        setTimeout(() => {
+          location.reload(); // Refresh the page
+        }, 1000);
+        setIsSubmitting(false);
+      } catch (error) {
+        toast.error('Sorry!, An error occurred while sending your response');
+        console.error('Error:', error);
       }
+      
     },
   });
 
