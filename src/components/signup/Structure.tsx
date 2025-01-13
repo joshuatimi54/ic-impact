@@ -61,13 +61,15 @@ const Structure: React.FC<IProps> = ({
         {currentFormIndex === 4 ? (
           <Button
             className="flex items-center justify-center gap-2 bg-orangish "
-            onClick={handleReset}
+            // onClick={handleReset}
           >
-            <span>Reset Form </span>
-            <span>
-              {' '}
-              <ChevronsRight size={20} />{' '}
-            </span>
+            <Link to="https://tinyurl.com/ICI-website-leads" target='_blank'>
+              <span>Join WhatsApp Group </span>
+              <span>
+                {' '}
+                <ChevronsRight size={20} />{' '}
+              </span>
+            </Link>
           </Button>
         ) : currentFormIndex === 3 ? (
           <Button
