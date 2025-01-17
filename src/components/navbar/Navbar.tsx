@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ButtonItem from '../button/Button';
 import Logo from '@/assets/logo.webp';
 import { Link, Outlet, useLocation } from 'react-router-dom';
@@ -39,9 +39,9 @@ const Navbar: React.FC = () => {
 
   const router = useLocation();
 
-useEffect(() => {
-setIsOpened(false)
-},[router.pathname])
+  useEffect(() => {
+    setIsOpened(false);
+  }, [router.pathname]);
 
   return (
     <nav>
@@ -50,7 +50,11 @@ setIsOpened(false)
           <div className="flex items-center justify-between gap-4 py-3">
             <div>
               <Link to="/">
-                <img className='max-[1800px]:max-w-[150px] min-[1800px]:max-w-[200px]' src={Logo} alt="img" />
+                <img
+                  className="max-[1800px]:max-w-[150px] min-[1800px]:max-w-[200px]"
+                  src={Logo}
+                  alt="img"
+                />
               </Link>
             </div>
             <ul className="flex items-center justify-between gap-[30px] font-rozanovaBold max-[900px]:hidden">
@@ -97,7 +101,7 @@ setIsOpened(false)
               <motion.div
                 className={clsx(
                   'bg-white py-4',
-                  isOpened && 'fixed right-0 top-[90px] w-full',
+                  isOpened && 'fixed right-0 top-[60px] w-full',
                   !isOpened && 'fixed right-[-100vw] top-[90px]'
                 )}
                 initial={{
