@@ -21,11 +21,11 @@ const Structure: React.FC<IProps> = ({
   next,
   currentFormIndex,
   formik,
-  setCurrentFormIndex,
+  // setCurrentFormIndex,
 }) => {
-  const handleReset = () => {
+  /*const handleReset = () => {
     setCurrentFormIndex(0);
-  };
+  };*/
   return (
     <div
       style={{ boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }}
