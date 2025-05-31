@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="absolute min-w-[500px] w-full min-[970px]:top-[-200px] min-[970px]:right-[-400px] max-[970px]:top-[100px] max-[970px]:right-[100px] max-[670px]:right-[-150px] z-[-1]">
+        <div className="absolute min-w-[500px] w-full min-[970px]:top-[-200px] min-[970px]:right-[-400px] max-[970px]:top-[0px] max-[970px]:right-[100px] max-[670px]:right-[-150px] z-[-1]">
           <img className="w-[70%]" src={map} alt="img" />
         </div>
       </div>
