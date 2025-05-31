@@ -22,7 +22,6 @@ const FormStatus: React.FC<FormStatusProps> = ({ motionDirection }) => {
             Congratulations on your registration, now you are an official Citizen of IC-IMPACT COMMUNITY. <br />
             Please check your mail for further instructions.
             
-            (NOTE: If you are not on the General WhatsApp Group yet, please click this link to join: https://wa.link/gykvnk ).
           </span>
         </Texts>
         <Texts>See you in the Circle!</Texts>

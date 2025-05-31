@@ -63,7 +63,7 @@ const Structure: React.FC<IProps> = ({
             className="flex items-center justify-center gap-2 bg-orangish "
             // onClick={handleReset}
           >
-            <Link to="https://tinyurl.com/ICI-website-leads" target='_blank'>
+            <Link to="https://tinyurl.com/ic-impact-official-group" target='_blank'>
               <span>Join WhatsApp Group </span>
               <span>
                 {' '}
