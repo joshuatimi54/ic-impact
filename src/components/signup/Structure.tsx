@@ -38,8 +38,8 @@ const Structure: React.FC<IProps> = ({
             className="flex items-center justify-center gap-2 bg-orangish "
             onClick={next}
           >
-            <Link className="flex items-center justify-center gap-2" to="/">
-              <span>Go Back Home </span>
+            <Link className="flex items-center justify-center gap-2" to="#">
+              <span>Completed</span>
               <span>
                 {' '}
                 <Home size={20} />{' '}
