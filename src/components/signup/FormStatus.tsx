@@ -19,9 +19,10 @@ const FormStatus: React.FC<FormStatusProps> = ({ motionDirection }) => {
       <div className="flex flex-col items-center gap-[40px]">
         <Texts className="flex items-center justify-center text-center gap-1 text-green-500">
           <span className="flex">
-            Congratulations! Your details have been successfully captured. 
-            Please proceed to WhatsApp for further instructions. You will also receive an email with your credentials shortly 
-            (Incase you didn't receive the mail in your inbox, please check your Spam section).
+            Congratulations on your registration, now you are an official Citizen of IC-IMPACT COMMUNITY. <br />
+            Please check your mail for further instructions.
+            
+            (NOTE: If you are not on the General WhatsApp Group yet, please click this link to join: https://wa.link/gykvnk ).
           </span>
         </Texts>
         <Texts>See you in the Circle!</Texts>
