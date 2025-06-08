@@ -20,14 +20,14 @@ const Joinwaitlist = () => {
             >
                 <Texts>
                     <FadeInText delay={0.4} inView={inViewOne}>
-                    Admission into IC-IMPACT COMMUNITY is currently on hold till the month of MAY, 
-                    but you can join our waitlist here
+                    Thanks for your interest in IC-IMPACT COMMUNITY! Unfortunately, registration for our second cohort has ended as of June 2025. The next cohort is coming up in September 2025. 
+                    <br/>Join our waitlist to get notified about upcoming opportunities!
                     </FadeInText>
                 </Texts>
             </div>
             <div>
                 <ButtonItem className="mt-3">
-                    <Link to="https://wa.link/brincw"> Join Wait List </Link>
+                    <Link to="https://wa.link/7bjpj0"> Join Wait List </Link>
                 </ButtonItem>
             </div>
         </div>
